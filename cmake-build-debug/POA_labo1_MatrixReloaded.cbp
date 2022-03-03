@@ -80,7 +80,43 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/Application.cpp">
+			<Option target="POA_labo1_MatrixReloaded"/>
+		</Unit>
+		<Unit filename="C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/Application.h">
+			<Option target="POA_labo1_MatrixReloaded"/>
+		</Unit>
+		<Unit filename="C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/Matrix.cpp">
+			<Option target="POA_labo1_MatrixReloaded"/>
+		</Unit>
+		<Unit filename="C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/Matrix.h">
+			<Option target="POA_labo1_MatrixReloaded"/>
+		</Unit>
 		<Unit filename="C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/main.cpp">
+			<Option target="POA_labo1_MatrixReloaded"/>
+		</Unit>
+		<Unit filename="C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/operations/Add.cpp">
+			<Option target="POA_labo1_MatrixReloaded"/>
+		</Unit>
+		<Unit filename="C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/operations/Add.h">
+			<Option target="POA_labo1_MatrixReloaded"/>
+		</Unit>
+		<Unit filename="C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/operations/Mult.cpp">
+			<Option target="POA_labo1_MatrixReloaded"/>
+		</Unit>
+		<Unit filename="C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/operations/Mult.h">
+			<Option target="POA_labo1_MatrixReloaded"/>
+		</Unit>
+		<Unit filename="C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/operations/Operation.cpp">
+			<Option target="POA_labo1_MatrixReloaded"/>
+		</Unit>
+		<Unit filename="C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/operations/Operation.h">
+			<Option target="POA_labo1_MatrixReloaded"/>
+		</Unit>
+		<Unit filename="C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/operations/Sub.cpp">
+			<Option target="POA_labo1_MatrixReloaded"/>
+		</Unit>
+		<Unit filename="C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/operations/Sub.h">
 			<Option target="POA_labo1_MatrixReloaded"/>
 		</Unit>
 		<Unit filename="C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/CMakeLists.txt">

@@ -1,0 +1,14 @@
+//
+// Created by cfont on 24.02.2022.
+//
+
+#ifndef POA_LABO1_MATRIXRELOADED_APPLICATION_H
+#define POA_LABO1_MATRIXRELOADED_APPLICATION_H
+
+
+class Application {
+
+};
+
+
+#endif //POA_LABO1_MATRIXRELOADED_APPLICATION_H

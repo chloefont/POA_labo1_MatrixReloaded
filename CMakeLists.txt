@@ -3,4 +3,4 @@ project(POA_labo1_MatrixReloaded)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(POA_labo1_MatrixReloaded main.cpp)
+add_executable(POA_labo1_MatrixReloaded main.cpp operations/Operation.h operations/Operation.cpp operations/Add.cpp operations/Add.h operations/Sub.cpp operations/Sub.h operations/Mult.cpp operations/Mult.h Matrix.cpp Matrix.h Application.cpp Application.h)

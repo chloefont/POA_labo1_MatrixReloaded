@@ -141,6 +141,60 @@ POA_labo1_MatrixReloaded/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\POA_labo1_MatrixReloaded.dir\build.make CMakeFiles/POA_labo1_MatrixReloaded.dir/build
 .PHONY : POA_labo1_MatrixReloaded/fast
 
+Application.obj: Application.cpp.obj
+
+.PHONY : Application.obj
+
+# target to build an object file
+Application.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POA_labo1_MatrixReloaded.dir\build.make CMakeFiles/POA_labo1_MatrixReloaded.dir/Application.cpp.obj
+.PHONY : Application.cpp.obj
+
+Application.i: Application.cpp.i
+
+.PHONY : Application.i
+
+# target to preprocess a source file
+Application.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POA_labo1_MatrixReloaded.dir\build.make CMakeFiles/POA_labo1_MatrixReloaded.dir/Application.cpp.i
+.PHONY : Application.cpp.i
+
+Application.s: Application.cpp.s
+
+.PHONY : Application.s
+
+# target to generate assembly for a file
+Application.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POA_labo1_MatrixReloaded.dir\build.make CMakeFiles/POA_labo1_MatrixReloaded.dir/Application.cpp.s
+.PHONY : Application.cpp.s
+
+Matrix.obj: Matrix.cpp.obj
+
+.PHONY : Matrix.obj
+
+# target to build an object file
+Matrix.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POA_labo1_MatrixReloaded.dir\build.make CMakeFiles/POA_labo1_MatrixReloaded.dir/Matrix.cpp.obj
+.PHONY : Matrix.cpp.obj
+
+Matrix.i: Matrix.cpp.i
+
+.PHONY : Matrix.i
+
+# target to preprocess a source file
+Matrix.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POA_labo1_MatrixReloaded.dir\build.make CMakeFiles/POA_labo1_MatrixReloaded.dir/Matrix.cpp.i
+.PHONY : Matrix.cpp.i
+
+Matrix.s: Matrix.cpp.s
+
+.PHONY : Matrix.s
+
+# target to generate assembly for a file
+Matrix.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POA_labo1_MatrixReloaded.dir\build.make CMakeFiles/POA_labo1_MatrixReloaded.dir/Matrix.cpp.s
+.PHONY : Matrix.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -168,6 +222,114 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\POA_labo1_MatrixReloaded.dir\build.make CMakeFiles/POA_labo1_MatrixReloaded.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+operations/Add.obj: operations/Add.cpp.obj
+
+.PHONY : operations/Add.obj
+
+# target to build an object file
+operations/Add.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POA_labo1_MatrixReloaded.dir\build.make CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Add.cpp.obj
+.PHONY : operations/Add.cpp.obj
+
+operations/Add.i: operations/Add.cpp.i
+
+.PHONY : operations/Add.i
+
+# target to preprocess a source file
+operations/Add.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POA_labo1_MatrixReloaded.dir\build.make CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Add.cpp.i
+.PHONY : operations/Add.cpp.i
+
+operations/Add.s: operations/Add.cpp.s
+
+.PHONY : operations/Add.s
+
+# target to generate assembly for a file
+operations/Add.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POA_labo1_MatrixReloaded.dir\build.make CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Add.cpp.s
+.PHONY : operations/Add.cpp.s
+
+operations/Mult.obj: operations/Mult.cpp.obj
+
+.PHONY : operations/Mult.obj
+
+# target to build an object file
+operations/Mult.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POA_labo1_MatrixReloaded.dir\build.make CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Mult.cpp.obj
+.PHONY : operations/Mult.cpp.obj
+
+operations/Mult.i: operations/Mult.cpp.i
+
+.PHONY : operations/Mult.i
+
+# target to preprocess a source file
+operations/Mult.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POA_labo1_MatrixReloaded.dir\build.make CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Mult.cpp.i
+.PHONY : operations/Mult.cpp.i
+
+operations/Mult.s: operations/Mult.cpp.s
+
+.PHONY : operations/Mult.s
+
+# target to generate assembly for a file
+operations/Mult.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POA_labo1_MatrixReloaded.dir\build.make CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Mult.cpp.s
+.PHONY : operations/Mult.cpp.s
+
+operations/Operation.obj: operations/Operation.cpp.obj
+
+.PHONY : operations/Operation.obj
+
+# target to build an object file
+operations/Operation.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POA_labo1_MatrixReloaded.dir\build.make CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Operation.cpp.obj
+.PHONY : operations/Operation.cpp.obj
+
+operations/Operation.i: operations/Operation.cpp.i
+
+.PHONY : operations/Operation.i
+
+# target to preprocess a source file
+operations/Operation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POA_labo1_MatrixReloaded.dir\build.make CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Operation.cpp.i
+.PHONY : operations/Operation.cpp.i
+
+operations/Operation.s: operations/Operation.cpp.s
+
+.PHONY : operations/Operation.s
+
+# target to generate assembly for a file
+operations/Operation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POA_labo1_MatrixReloaded.dir\build.make CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Operation.cpp.s
+.PHONY : operations/Operation.cpp.s
+
+operations/Sub.obj: operations/Sub.cpp.obj
+
+.PHONY : operations/Sub.obj
+
+# target to build an object file
+operations/Sub.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POA_labo1_MatrixReloaded.dir\build.make CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Sub.cpp.obj
+.PHONY : operations/Sub.cpp.obj
+
+operations/Sub.i: operations/Sub.cpp.i
+
+.PHONY : operations/Sub.i
+
+# target to preprocess a source file
+operations/Sub.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POA_labo1_MatrixReloaded.dir\build.make CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Sub.cpp.i
+.PHONY : operations/Sub.cpp.i
+
+operations/Sub.s: operations/Sub.cpp.s
+
+.PHONY : operations/Sub.s
+
+# target to generate assembly for a file
+operations/Sub.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POA_labo1_MatrixReloaded.dir\build.make CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Sub.cpp.s
+.PHONY : operations/Sub.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -177,9 +339,27 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... POA_labo1_MatrixReloaded
+	@echo ... Application.obj
+	@echo ... Application.i
+	@echo ... Application.s
+	@echo ... Matrix.obj
+	@echo ... Matrix.i
+	@echo ... Matrix.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... operations/Add.obj
+	@echo ... operations/Add.i
+	@echo ... operations/Add.s
+	@echo ... operations/Mult.obj
+	@echo ... operations/Mult.i
+	@echo ... operations/Mult.s
+	@echo ... operations/Operation.obj
+	@echo ... operations/Operation.i
+	@echo ... operations/Operation.s
+	@echo ... operations/Sub.obj
+	@echo ... operations/Sub.i
+	@echo ... operations/Sub.s
 .PHONY : help
 
 

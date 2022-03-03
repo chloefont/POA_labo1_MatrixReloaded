@@ -88,19 +88,109 @@ CMakeFiles/POA_labo1_MatrixReloaded.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/POA_labo1_MatrixReloaded.dir/main.cpp.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\cfont\CLionProjects\POA_labo1_MatrixReloaded\main.cpp -o CMakeFiles\POA_labo1_MatrixReloaded.dir\main.cpp.s
 
+CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Operation.cpp.obj: CMakeFiles/POA_labo1_MatrixReloaded.dir/flags.make
+CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Operation.cpp.obj: ../operations/Operation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\cfont\CLionProjects\POA_labo1_MatrixReloaded\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Operation.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\POA_labo1_MatrixReloaded.dir\operations\Operation.cpp.obj -c C:\Users\cfont\CLionProjects\POA_labo1_MatrixReloaded\operations\Operation.cpp
+
+CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Operation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Operation.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\cfont\CLionProjects\POA_labo1_MatrixReloaded\operations\Operation.cpp > CMakeFiles\POA_labo1_MatrixReloaded.dir\operations\Operation.cpp.i
+
+CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Operation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Operation.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\cfont\CLionProjects\POA_labo1_MatrixReloaded\operations\Operation.cpp -o CMakeFiles\POA_labo1_MatrixReloaded.dir\operations\Operation.cpp.s
+
+CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Add.cpp.obj: CMakeFiles/POA_labo1_MatrixReloaded.dir/flags.make
+CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Add.cpp.obj: ../operations/Add.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\cfont\CLionProjects\POA_labo1_MatrixReloaded\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Add.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\POA_labo1_MatrixReloaded.dir\operations\Add.cpp.obj -c C:\Users\cfont\CLionProjects\POA_labo1_MatrixReloaded\operations\Add.cpp
+
+CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Add.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Add.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\cfont\CLionProjects\POA_labo1_MatrixReloaded\operations\Add.cpp > CMakeFiles\POA_labo1_MatrixReloaded.dir\operations\Add.cpp.i
+
+CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Add.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Add.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\cfont\CLionProjects\POA_labo1_MatrixReloaded\operations\Add.cpp -o CMakeFiles\POA_labo1_MatrixReloaded.dir\operations\Add.cpp.s
+
+CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Sub.cpp.obj: CMakeFiles/POA_labo1_MatrixReloaded.dir/flags.make
+CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Sub.cpp.obj: ../operations/Sub.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\cfont\CLionProjects\POA_labo1_MatrixReloaded\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Sub.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\POA_labo1_MatrixReloaded.dir\operations\Sub.cpp.obj -c C:\Users\cfont\CLionProjects\POA_labo1_MatrixReloaded\operations\Sub.cpp
+
+CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Sub.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Sub.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\cfont\CLionProjects\POA_labo1_MatrixReloaded\operations\Sub.cpp > CMakeFiles\POA_labo1_MatrixReloaded.dir\operations\Sub.cpp.i
+
+CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Sub.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Sub.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\cfont\CLionProjects\POA_labo1_MatrixReloaded\operations\Sub.cpp -o CMakeFiles\POA_labo1_MatrixReloaded.dir\operations\Sub.cpp.s
+
+CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Mult.cpp.obj: CMakeFiles/POA_labo1_MatrixReloaded.dir/flags.make
+CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Mult.cpp.obj: ../operations/Mult.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\cfont\CLionProjects\POA_labo1_MatrixReloaded\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Mult.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\POA_labo1_MatrixReloaded.dir\operations\Mult.cpp.obj -c C:\Users\cfont\CLionProjects\POA_labo1_MatrixReloaded\operations\Mult.cpp
+
+CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Mult.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Mult.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\cfont\CLionProjects\POA_labo1_MatrixReloaded\operations\Mult.cpp > CMakeFiles\POA_labo1_MatrixReloaded.dir\operations\Mult.cpp.i
+
+CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Mult.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Mult.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\cfont\CLionProjects\POA_labo1_MatrixReloaded\operations\Mult.cpp -o CMakeFiles\POA_labo1_MatrixReloaded.dir\operations\Mult.cpp.s
+
+CMakeFiles/POA_labo1_MatrixReloaded.dir/Matrix.cpp.obj: CMakeFiles/POA_labo1_MatrixReloaded.dir/flags.make
+CMakeFiles/POA_labo1_MatrixReloaded.dir/Matrix.cpp.obj: ../Matrix.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\cfont\CLionProjects\POA_labo1_MatrixReloaded\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/POA_labo1_MatrixReloaded.dir/Matrix.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\POA_labo1_MatrixReloaded.dir\Matrix.cpp.obj -c C:\Users\cfont\CLionProjects\POA_labo1_MatrixReloaded\Matrix.cpp
+
+CMakeFiles/POA_labo1_MatrixReloaded.dir/Matrix.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/POA_labo1_MatrixReloaded.dir/Matrix.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\cfont\CLionProjects\POA_labo1_MatrixReloaded\Matrix.cpp > CMakeFiles\POA_labo1_MatrixReloaded.dir\Matrix.cpp.i
+
+CMakeFiles/POA_labo1_MatrixReloaded.dir/Matrix.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/POA_labo1_MatrixReloaded.dir/Matrix.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\cfont\CLionProjects\POA_labo1_MatrixReloaded\Matrix.cpp -o CMakeFiles\POA_labo1_MatrixReloaded.dir\Matrix.cpp.s
+
+CMakeFiles/POA_labo1_MatrixReloaded.dir/Application.cpp.obj: CMakeFiles/POA_labo1_MatrixReloaded.dir/flags.make
+CMakeFiles/POA_labo1_MatrixReloaded.dir/Application.cpp.obj: ../Application.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\cfont\CLionProjects\POA_labo1_MatrixReloaded\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/POA_labo1_MatrixReloaded.dir/Application.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\POA_labo1_MatrixReloaded.dir\Application.cpp.obj -c C:\Users\cfont\CLionProjects\POA_labo1_MatrixReloaded\Application.cpp
+
+CMakeFiles/POA_labo1_MatrixReloaded.dir/Application.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/POA_labo1_MatrixReloaded.dir/Application.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\cfont\CLionProjects\POA_labo1_MatrixReloaded\Application.cpp > CMakeFiles\POA_labo1_MatrixReloaded.dir\Application.cpp.i
+
+CMakeFiles/POA_labo1_MatrixReloaded.dir/Application.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/POA_labo1_MatrixReloaded.dir/Application.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\cfont\CLionProjects\POA_labo1_MatrixReloaded\Application.cpp -o CMakeFiles\POA_labo1_MatrixReloaded.dir\Application.cpp.s
+
 # Object files for target POA_labo1_MatrixReloaded
 POA_labo1_MatrixReloaded_OBJECTS = \
-"CMakeFiles/POA_labo1_MatrixReloaded.dir/main.cpp.obj"
+"CMakeFiles/POA_labo1_MatrixReloaded.dir/main.cpp.obj" \
+"CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Operation.cpp.obj" \
+"CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Add.cpp.obj" \
+"CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Sub.cpp.obj" \
+"CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Mult.cpp.obj" \
+"CMakeFiles/POA_labo1_MatrixReloaded.dir/Matrix.cpp.obj" \
+"CMakeFiles/POA_labo1_MatrixReloaded.dir/Application.cpp.obj"
 
 # External object files for target POA_labo1_MatrixReloaded
 POA_labo1_MatrixReloaded_EXTERNAL_OBJECTS =
 
 POA_labo1_MatrixReloaded.exe: CMakeFiles/POA_labo1_MatrixReloaded.dir/main.cpp.obj
+POA_labo1_MatrixReloaded.exe: CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Operation.cpp.obj
+POA_labo1_MatrixReloaded.exe: CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Add.cpp.obj
+POA_labo1_MatrixReloaded.exe: CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Sub.cpp.obj
+POA_labo1_MatrixReloaded.exe: CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Mult.cpp.obj
+POA_labo1_MatrixReloaded.exe: CMakeFiles/POA_labo1_MatrixReloaded.dir/Matrix.cpp.obj
+POA_labo1_MatrixReloaded.exe: CMakeFiles/POA_labo1_MatrixReloaded.dir/Application.cpp.obj
 POA_labo1_MatrixReloaded.exe: CMakeFiles/POA_labo1_MatrixReloaded.dir/build.make
 POA_labo1_MatrixReloaded.exe: CMakeFiles/POA_labo1_MatrixReloaded.dir/linklibs.rsp
 POA_labo1_MatrixReloaded.exe: CMakeFiles/POA_labo1_MatrixReloaded.dir/objects1.rsp
 POA_labo1_MatrixReloaded.exe: CMakeFiles/POA_labo1_MatrixReloaded.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\cfont\CLionProjects\POA_labo1_MatrixReloaded\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable POA_labo1_MatrixReloaded.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\cfont\CLionProjects\POA_labo1_MatrixReloaded\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable POA_labo1_MatrixReloaded.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\POA_labo1_MatrixReloaded.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
