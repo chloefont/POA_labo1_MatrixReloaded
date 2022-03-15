@@ -51,7 +51,8 @@ bool operator!=(const Matrix &m1, const Matrix &m2) {
    return !operator==(m1, m2);
 }
 
-Matrix::Matrix (size_t n, size_t m, unsigned modulo): nbRows(n), nbCols(m) {
+Matrix::Matrix (size_t n, size_t m, unsigned modulo): nbRows(n), nbCols(m), modulo
+(modulo) {
    if (n <= 0 || m <= 0)
       throw runtime_error("Les nombres de lignes et colonnes doivent etre "
                           "strictement positifs.");
@@ -80,8 +81,8 @@ Matrix::~Matrix() {
    delete matrix;
 }
 
-Matrix::Matrix(size_t n, size_t m, unsigned modulo, unsigned** otherMatrix) : nbRows
-(n), nbCols(m), modulo(modulo) {
+Matrix::Matrix(size_t n, size_t m, unsigned modulo, unsigned** otherMatrix) : nbRows(n),
+nbCols(m), modulo(modulo) {
    if (n <= 0 || m <= 0)
       throw runtime_error("Les nombres de lignes et colonnes doivent etre "
                           "strictement positifs.");

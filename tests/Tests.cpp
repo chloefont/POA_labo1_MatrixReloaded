@@ -17,11 +17,45 @@ void Tests::buildCorrectMatrixWithRandomConstructor() {
 
    try {
       Matrix m(nbRows, nbCols, modulo);
-   } catch (runtime_error e) {
+   } catch (const runtime_error& e) {
       got = "failed";
    }
 
    printResults("build correct matrix with random contructor", expected, got);
+}
+
+void Tests::buildMatrixWithNullNbRows() {
+   size_t nbRows = 0,
+      nbCols = 5;
+   unsigned modulo = 7;
+
+   string expected = "failed",
+      got = "ok";
+
+   try {
+      Matrix m(nbRows, nbCols, modulo);
+   } catch (const runtime_error& e) {
+      got = "failed";
+   }
+
+   printResults("build matrix with null number of rows", expected, got);
+}
+
+void Tests::buildMatrixWithNullNbCols() {
+   size_t nbRows = 5,
+          nbCols = 0;
+   unsigned modulo = 7;
+
+   string expected = "failed",
+      got = "ok";
+
+   try {
+      Matrix m(nbRows, nbCols, modulo);
+   } catch (const runtime_error& e) {
+      got = "failed";
+   }
+
+   printResults("build matrix with null number of cols", expected, got);
 }
 
 void Tests::buildCorrectMatrixWithCopyConstructor() {
@@ -38,16 +72,20 @@ void Tests::buildCorrectMatrixWithCopyConstructor() {
 
       if (m1 != m2)
          got = "failed";
-   } catch (runtime_error e) {
+   } catch (const runtime_error& e) {
       got = "failed";
    }
 
    printResults("build correct matrix with copy contructor", expected, got);
 }
 
-void
-Tests::printResults(std::string testName, std::string expected, std::string got) {
+void Tests::printResults(std::string testName, std::string expected, std::string
+got) {
    cout << "Test " << testName << endl
         << "\texpected : " << expected << endl
         << "\tgot : " << got << endl;
 }
+
+
+
+

@@ -6,7 +6,7 @@ using namespace std;
 
 int main() {
    Matrix m(5, 5, 5);
-   Matrix m2(4, 4, 6);
+   Matrix m2(4, 4, 5);
 
    cout << m << endl << m2 << endl;
    m.addStatic(m2);

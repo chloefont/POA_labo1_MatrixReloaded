@@ -12,6 +12,10 @@ class Tests {
 public:
    static void buildCorrectMatrixWithRandomConstructor();
 
+   static void buildMatrixWithNullNbRows();
+
+   static void buildMatrixWithNullNbCols();
+
    static void buildCorrectMatrixWithCopyConstructor();
 
    static void buildWrongMatrixWithCopyConstructor();
