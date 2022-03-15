@@ -32,6 +32,8 @@ public:
 
    static void additionWithDifferentColumns();
 
+   static void affectationOperator();
+
 private:
    static void printResults(std::string testName, std::string expected, std::string
    got);

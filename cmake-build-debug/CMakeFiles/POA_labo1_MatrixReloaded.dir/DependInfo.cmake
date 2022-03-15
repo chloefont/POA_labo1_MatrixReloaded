@@ -1,22 +1,21 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
-  "CXX"
   )
-# The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/Application.cpp" "C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/cmake-build-debug/CMakeFiles/POA_labo1_MatrixReloaded.dir/Application.cpp.obj"
-  "C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/Matrix.cpp" "C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/cmake-build-debug/CMakeFiles/POA_labo1_MatrixReloaded.dir/Matrix.cpp.obj"
-  "C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/main.cpp" "C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/cmake-build-debug/CMakeFiles/POA_labo1_MatrixReloaded.dir/main.cpp.obj"
-  "C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/operations/Add.cpp" "C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/cmake-build-debug/CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Add.cpp.obj"
-  "C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/operations/Mult.cpp" "C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/cmake-build-debug/CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Mult.cpp.obj"
-  "C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/operations/Operation.cpp" "C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/cmake-build-debug/CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Operation.cpp.obj"
-  "C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/operations/Sub.cpp" "C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/cmake-build-debug/CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Sub.cpp.obj"
-  "C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/tests/Tests.cpp" "C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/cmake-build-debug/CMakeFiles/POA_labo1_MatrixReloaded.dir/tests/Tests.cpp.obj"
-  )
-set(CMAKE_CXX_COMPILER_ID "GNU")
 
-# The include file search paths:
-set(CMAKE_CXX_TARGET_INCLUDE_PATH
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/luca/Documents/git/POA_labo1_MatrixReloaded/Application.cpp" "CMakeFiles/POA_labo1_MatrixReloaded.dir/Application.cpp.o" "gcc" "CMakeFiles/POA_labo1_MatrixReloaded.dir/Application.cpp.o.d"
+  "/home/luca/Documents/git/POA_labo1_MatrixReloaded/Matrix.cpp" "CMakeFiles/POA_labo1_MatrixReloaded.dir/Matrix.cpp.o" "gcc" "CMakeFiles/POA_labo1_MatrixReloaded.dir/Matrix.cpp.o.d"
+  "/home/luca/Documents/git/POA_labo1_MatrixReloaded/main.cpp" "CMakeFiles/POA_labo1_MatrixReloaded.dir/main.cpp.o" "gcc" "CMakeFiles/POA_labo1_MatrixReloaded.dir/main.cpp.o.d"
+  "/home/luca/Documents/git/POA_labo1_MatrixReloaded/operations/Add.cpp" "CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Add.cpp.o" "gcc" "CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Add.cpp.o.d"
+  "/home/luca/Documents/git/POA_labo1_MatrixReloaded/operations/Mult.cpp" "CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Mult.cpp.o" "gcc" "CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Mult.cpp.o.d"
+  "/home/luca/Documents/git/POA_labo1_MatrixReloaded/operations/Operation.cpp" "CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Operation.cpp.o" "gcc" "CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Operation.cpp.o.d"
+  "/home/luca/Documents/git/POA_labo1_MatrixReloaded/operations/Sub.cpp" "CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Sub.cpp.o" "gcc" "CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Sub.cpp.o.d"
+  "/home/luca/Documents/git/POA_labo1_MatrixReloaded/tests/Tests.cpp" "CMakeFiles/POA_labo1_MatrixReloaded.dir/tests/Tests.cpp.o" "gcc" "CMakeFiles/POA_labo1_MatrixReloaded.dir/tests/Tests.cpp.o.d"
   )
 
 # Targets to which this target links.
