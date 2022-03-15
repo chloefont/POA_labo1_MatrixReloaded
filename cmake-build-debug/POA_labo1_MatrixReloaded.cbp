@@ -59,6 +59,48 @@
 					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="POA_labo1_MatrixReloaded_tests">
+				<Option output="C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/cmake-build-debug/POA_labo1_MatrixReloaded_tests.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-win32-sjlj-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-win32-sjlj-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-win32-sjlj-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-win32-sjlj-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-win32-sjlj-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-win32-sjlj-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/cmake-build-debug/Makefile&quot;  VERBOSE=1 POA_labo1_MatrixReloaded_tests"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="POA_labo1_MatrixReloaded_tests/fast">
+				<Option output="C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/cmake-build-debug/POA_labo1_MatrixReloaded_tests.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-win32-sjlj-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-win32-sjlj-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-win32-sjlj-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-win32-sjlj-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-win32-sjlj-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-win32-sjlj-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/cmake-build-debug/Makefile&quot;  VERBOSE=1 POA_labo1_MatrixReloaded_tests/fast"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="edit_cache">
 				<Option working_dir="C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/cmake-build-debug"/>
 				<Option type="4"/>
@@ -82,42 +124,65 @@
 		</Build>
 		<Unit filename="C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/Application.cpp">
 			<Option target="POA_labo1_MatrixReloaded"/>
+			<Option target="POA_labo1_MatrixReloaded_tests"/>
 		</Unit>
 		<Unit filename="C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/Application.h">
 			<Option target="POA_labo1_MatrixReloaded"/>
+			<Option target="POA_labo1_MatrixReloaded_tests"/>
 		</Unit>
 		<Unit filename="C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/Matrix.cpp">
 			<Option target="POA_labo1_MatrixReloaded"/>
+			<Option target="POA_labo1_MatrixReloaded_tests"/>
 		</Unit>
 		<Unit filename="C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/Matrix.h">
 			<Option target="POA_labo1_MatrixReloaded"/>
+			<Option target="POA_labo1_MatrixReloaded_tests"/>
 		</Unit>
 		<Unit filename="C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/main.cpp">
 			<Option target="POA_labo1_MatrixReloaded"/>
 		</Unit>
 		<Unit filename="C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/operations/Add.cpp">
 			<Option target="POA_labo1_MatrixReloaded"/>
+			<Option target="POA_labo1_MatrixReloaded_tests"/>
 		</Unit>
 		<Unit filename="C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/operations/Add.h">
 			<Option target="POA_labo1_MatrixReloaded"/>
+			<Option target="POA_labo1_MatrixReloaded_tests"/>
 		</Unit>
 		<Unit filename="C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/operations/Mult.cpp">
 			<Option target="POA_labo1_MatrixReloaded"/>
+			<Option target="POA_labo1_MatrixReloaded_tests"/>
 		</Unit>
 		<Unit filename="C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/operations/Mult.h">
 			<Option target="POA_labo1_MatrixReloaded"/>
+			<Option target="POA_labo1_MatrixReloaded_tests"/>
 		</Unit>
 		<Unit filename="C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/operations/Operation.cpp">
 			<Option target="POA_labo1_MatrixReloaded"/>
+			<Option target="POA_labo1_MatrixReloaded_tests"/>
 		</Unit>
 		<Unit filename="C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/operations/Operation.h">
 			<Option target="POA_labo1_MatrixReloaded"/>
+			<Option target="POA_labo1_MatrixReloaded_tests"/>
 		</Unit>
 		<Unit filename="C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/operations/Sub.cpp">
 			<Option target="POA_labo1_MatrixReloaded"/>
+			<Option target="POA_labo1_MatrixReloaded_tests"/>
 		</Unit>
 		<Unit filename="C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/operations/Sub.h">
 			<Option target="POA_labo1_MatrixReloaded"/>
+			<Option target="POA_labo1_MatrixReloaded_tests"/>
+		</Unit>
+		<Unit filename="C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/tests/Tests.cpp">
+			<Option target="POA_labo1_MatrixReloaded"/>
+			<Option target="POA_labo1_MatrixReloaded_tests"/>
+		</Unit>
+		<Unit filename="C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/tests/Tests.h">
+			<Option target="POA_labo1_MatrixReloaded"/>
+			<Option target="POA_labo1_MatrixReloaded_tests"/>
+		</Unit>
+		<Unit filename="C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/tests/mainTests.cpp">
+			<Option target="POA_labo1_MatrixReloaded_tests"/>
 		</Unit>
 		<Unit filename="C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

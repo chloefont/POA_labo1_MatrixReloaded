@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/operations/Mult.cpp" "C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/cmake-build-debug/CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Mult.cpp.obj"
   "C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/operations/Operation.cpp" "C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/cmake-build-debug/CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Operation.cpp.obj"
   "C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/operations/Sub.cpp" "C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/cmake-build-debug/CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Sub.cpp.obj"
+  "C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/tests/Tests.cpp" "C:/Users/cfont/CLionProjects/POA_labo1_MatrixReloaded/cmake-build-debug/CMakeFiles/POA_labo1_MatrixReloaded.dir/tests/Tests.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

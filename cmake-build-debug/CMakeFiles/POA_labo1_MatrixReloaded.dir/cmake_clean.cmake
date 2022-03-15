@@ -6,6 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Mult.cpp.obj"
   "CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Operation.cpp.obj"
   "CMakeFiles/POA_labo1_MatrixReloaded.dir/operations/Sub.cpp.obj"
+  "CMakeFiles/POA_labo1_MatrixReloaded.dir/tests/Tests.cpp.obj"
   "POA_labo1_MatrixReloaded.exe"
   "POA_labo1_MatrixReloaded.exe.manifest"
   "POA_labo1_MatrixReloaded.pdb"

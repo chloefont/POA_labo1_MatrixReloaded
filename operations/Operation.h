@@ -6,9 +6,9 @@
 #define POA_LABO1_MATRIXRELOADED_OPERATION_H
 
 
-public abstract class Operation {
-
+class Operation {
+public:
+   virtual int calculate(int num1, int num2) const = 0;
 };
-
 
 #endif //POA_LABO1_MATRIXRELOADED_OPERATION_H

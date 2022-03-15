@@ -5,9 +5,12 @@
 #ifndef POA_LABO1_MATRIXRELOADED_ADD_H
 #define POA_LABO1_MATRIXRELOADED_ADD_H
 
+#include "Operation.h"
 
-class Add {
 
+class Add : public Operation {
+public:
+   int calculate(int num1, int num2) const override;
 };
 
 
