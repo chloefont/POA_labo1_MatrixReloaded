@@ -13,6 +13,10 @@ class Matrix {
 public:
    friend std::ostream& operator<<(std::ostream& os, const Matrix& matrix);
 
+   friend bool operator==(const Matrix& m1, const Matrix& m2);
+
+   friend bool operator!=(const Matrix& m1, const Matrix& m2);
+
    Matrix(size_t N, size_t M, unsigned modulo);
 
    Matrix(const Matrix& other);
@@ -41,20 +45,18 @@ public:
 
    size_t getNbCols() const;
 
-   static bool equals(const Matrix& m1, const Matrix& m2);
-
 private:
-   Matrix(size_t n, size_t m, int** otherMatrix);
+   Matrix(size_t n, size_t m, unsigned modulo, unsigned** otherMatrix);
 
-   static int** allocateMatrix(size_t nbRows, size_t nbCols);
+   static unsigned** allocateMatrix(size_t nbRows, size_t nbCols);
 
    static void operation(Matrix& m1, const Matrix& m2, const Operation&
    op);
 
-   int** matrix;
+   unsigned** matrix;
    size_t nbRows;
    size_t nbCols;
-   int modulo;
+   unsigned modulo;
 };
 
 

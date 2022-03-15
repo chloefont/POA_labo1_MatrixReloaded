@@ -4,7 +4,7 @@
 using namespace std;
 
 
-int mainTest() {
+int main() {
    Matrix m(5, 5, 5);
    Matrix m2(4, 4, 6);
 
