@@ -30,6 +30,7 @@ ostream& operator<< (ostream& os, const Matrix& matrix) {
    return os << str;
 }
 
+
 bool operator==(const Matrix &m1, const Matrix &m2) {
    if (&m1 == &m2)
       return true;
@@ -46,6 +47,7 @@ bool operator==(const Matrix &m1, const Matrix &m2) {
 
    return true;
 }
+
 
 bool operator!=(const Matrix &m1, const Matrix &m2) {
    return !operator==(m1, m2);
@@ -92,6 +94,7 @@ nbCols(m), modulo(modulo) {
    }
 }
 
+
 unsigned** Matrix::allocateMatrix(size_t nbRows, size_t nbCols) {
    unsigned** matrix = new unsigned*[nbRows];
 
@@ -101,11 +104,13 @@ unsigned** Matrix::allocateMatrix(size_t nbRows, size_t nbCols) {
    return matrix;
 }
 
+
 Matrix Matrix::addStatic(const Matrix &other) {
    Matrix newMatrix(*this);
    operation(newMatrix, other, Add());
    return newMatrix;
 }
+
 
 Matrix Matrix::subStatic(const Matrix &other) {
    Matrix newMatrix(*this);
@@ -113,23 +118,28 @@ Matrix Matrix::subStatic(const Matrix &other) {
    return newMatrix;
 }
 
+
 Matrix Matrix::multStatic(const Matrix &other) {
    Matrix newMatrix(*this);
    operation(newMatrix, other, Mult());
    return newMatrix;
 }
 
+
 void Matrix::addSelf(const Matrix &other) {
    operation(*this, other, Add());
 }
+
 
 void Matrix::subSelf(const Matrix &other) {
    operation(*this, other, Sub());
 }
 
+
 void Matrix::multSelf(const Matrix &other) {
    operation(*this, other, Mult());
 }
+
 
 Matrix* Matrix::addDynamic(const Matrix &other) {
    Matrix* newMatrix = new Matrix(*this);
@@ -137,17 +147,20 @@ Matrix* Matrix::addDynamic(const Matrix &other) {
    return newMatrix;
 }
 
+
 Matrix* Matrix::subDynamic(const Matrix &other) {
    Matrix* newMatrix = new Matrix(*this);
    operation(*newMatrix, other, Sub());
    return newMatrix;
 }
 
+
 Matrix* Matrix::multDynamic(const Matrix &other) {
    Matrix* newMatrix = new Matrix(*this);
    operation(*newMatrix, other, Mult());
    return newMatrix;
 }
+
 
 void Matrix::operation(Matrix &m1, const Matrix &m2, const Operation &op) {
    if (m1.modulo != m2.modulo)
@@ -192,9 +205,11 @@ void Matrix::operation(Matrix &m1, const Matrix &m2, const Operation &op) {
    m1.nbCols = colLengthMax;
 }
 
+
 size_t Matrix::getNbRows() const {
    return nbRows;
 }
+
 
 size_t Matrix::getNbCols() const {
    return nbCols;
@@ -218,6 +233,7 @@ Matrix& Matrix::operator=(const Matrix &other) {
 
    return *this;
 }
+
 
 void Matrix::deleteMatrix(unsigned int **matrixArray, size_t height) {
    for (int i = 0; i < height; ++i) {
