@@ -16,9 +16,9 @@ public:
 
    static void buildMatrixWithNullNbCols();
 
-   static void buildCorrectMatrixWithCopyConstructor();
+   static void buildMatrixWithNullModulo();
 
-   static void buildWrongMatrixWithCopyConstructor();
+   static void buildCorrectMatrixWithCopyConstructor();
 
    static void correctAdditionWithSameSize();
 

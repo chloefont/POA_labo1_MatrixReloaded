@@ -53,9 +53,9 @@ bool operator!=(const Matrix &m1, const Matrix &m2) {
 
 Matrix::Matrix (size_t n, size_t m, unsigned modulo): nbRows(n), nbCols(m), modulo
 (modulo) {
-   if (n <= 0 || m <= 0)
-      throw runtime_error("Les nombres de lignes et colonnes doivent etre "
-                          "strictement positifs.");
+   if (n <= 0 || m <= 0 || modulo <= 0)
+      throw runtime_error("Les nombres de lignes et colonnes ainsi que le modulo "
+                          "doivent etre strictement positifs.");
 
    matrix = allocateMatrix(n, m);
 
@@ -83,9 +83,9 @@ Matrix::~Matrix() {
 
 Matrix::Matrix(size_t n, size_t m, unsigned modulo, unsigned** otherMatrix) : nbRows(n),
 nbCols(m), modulo(modulo) {
-   if (n <= 0 || m <= 0)
-      throw runtime_error("Les nombres de lignes et colonnes doivent etre "
-                          "strictement positifs.");
+   if (n <= 0 || m <= 0 || modulo <= 0)
+      throw runtime_error("Les nombres de lignes et colonnes ainsi que le modulo "
+                          "doivent etre strictement positifs.");
 
    matrix = allocateMatrix(n, m);
 

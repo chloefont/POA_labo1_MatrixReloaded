@@ -58,6 +58,23 @@ void Tests::buildMatrixWithNullNbCols() {
    printResults("build matrix with null number of cols", expected, got);
 }
 
+void Tests::buildMatrixWithNullModulo() {
+   size_t nbRows = 5,
+          nbCols = 5;
+   unsigned modulo = 0;
+
+   string expected = "failed",
+      got = "ok";
+
+   try {
+      Matrix m(nbRows, nbCols, modulo);
+   } catch (const runtime_error& e) {
+      got = "failed";
+   }
+
+   printResults("build matrix with null modulo", expected, got);
+}
+
 void Tests::buildCorrectMatrixWithCopyConstructor() {
    size_t nbRows = 5,
           nbCols = 5;
@@ -85,6 +102,12 @@ got) {
         << "\texpected : " << expected << endl
         << "\tgot : " << got << endl;
 }
+
+
+
+
+
+
 
 
 
