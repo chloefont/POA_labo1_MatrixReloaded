@@ -20,17 +20,59 @@ public:
 
    static void buildCorrectMatrixWithCopyConstructor();
 
-   static void correctAdditionWithSameSize();
+   static void correctAddStaticWithSameSize();
 
-   static void wrongAdditionWithSameSize();
+   static void correctAddStaticWithDifferentSize();
 
-   static void correctSoustractionWithSameSize();
+   static void addStaticWithDifferentModulo();
 
-   static void correctMultiplicationWithSameSize();
+   static void correctAddSelfWithSameSize();
 
-   static void additionWithDifferentRows();
+   static void correctAddSelfWithDifferentSize();
 
-   static void additionWithDifferentColumns();
+   static void addSelfWithDifferentModulo();
+
+   static void correctAddDynamicWithSameSize();
+
+   static void correctAddDynamicWithDifferentSize();
+
+   static void addDynamicWithDifferentModulo();
+
+   static void correctSubStaticWithSameSize();
+
+   static void correctSubStaticWithDifferentSize();
+
+   static void subStaticWithDifferentModulo();
+
+   static void correctSubSelfWithSameSize();
+
+   static void correctSubSelfWithDifferentSize();
+
+   static void subSelfWithDifferentModulo();
+
+   static void correctSubDynamicWithSameSize();
+
+   static void correctSubDynamicWithDifferentSize();
+
+   static void subDynamicWithDifferentModulo();
+
+   static void correctMultStaticWithSameSize();
+
+   static void correctMultStaticWithDifferentSize();
+
+   static void multStaticWithDifferentModulo();
+
+   static void correctMultSelfWithSameSize();
+
+   static void correctMultSelfWithDifferentSize();
+
+   static void multSelfWithDifferentModulo();
+
+   static void correctMultDynamicWithSameSize();
+
+   static void correctMultDynamicWithDifferentSize();
+
+   static void multDynamicWithDifferentModulo();
 
    static void affectationOperator();
 
