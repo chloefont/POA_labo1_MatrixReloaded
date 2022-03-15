@@ -103,6 +103,29 @@ got) {
         << "\tgot : " << got << endl;
 }
 
+void Tests::affectationOperator() {
+   size_t nbRows = 5,
+      nbCols = 5,
+      nbRows2 = 7,
+      nbCols2 = 9;
+   unsigned modulo = 7, modulo2 = 10;
+
+   string expected = "ok",
+      got = "ok";
+
+   try {
+      Matrix m1(nbRows, nbCols, modulo);
+      Matrix m2(nbRows2, nbCols2, modulo);
+
+      if (m1 != m2)
+         got = "failed";
+   } catch (const runtime_error& e) {
+      got = "failed";
+   }
+
+   printResults("build correct matrix with copy contructor", expected, got);
+}
+
 
 
 

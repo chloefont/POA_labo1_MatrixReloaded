@@ -15,7 +15,7 @@
 using namespace std;
 
 ostream& operator<< (ostream& os, const Matrix& matrix) {
-   string str = "";
+   string str;
 
    for (size_t i = 0; i < matrix.nbRows; i++) {
       for (size_t j = 0; j < matrix.nbCols; j++) {
@@ -57,6 +57,7 @@ Matrix::Matrix (size_t n, size_t m, unsigned modulo): nbRows(n), nbCols(m), modu
       throw runtime_error("Les nombres de lignes et colonnes ainsi que le modulo "
                           "doivent etre strictement positifs.");
 
+   //TODO Il aurait été possible de créer un tableau contiguë dans la mémoire
    matrix = allocateMatrix(n, m);
 
    srand((unsigned )time(0));
@@ -73,12 +74,7 @@ Matrix::Matrix(const Matrix &other): Matrix(other.nbRows, other.nbCols, other
 .modulo, other.matrix) {}
 
 Matrix::~Matrix() {
-   for (size_t i = 0; i < nbRows; i++) {
-      // TODO checker si doit mettre delete[]
-      delete matrix[i];
-   }
-
-   delete matrix;
+   deleteMatrix(matrix, nbRows);
 }
 
 Matrix::Matrix(size_t n, size_t m, unsigned modulo, unsigned** otherMatrix) : nbRows(n),
@@ -202,6 +198,32 @@ size_t Matrix::getNbRows() const {
 
 size_t Matrix::getNbCols() const {
    return nbCols;
+}
+
+Matrix& Matrix::operator=(const Matrix &other) {
+
+   deleteMatrix(this->matrix, this->nbRows);
+   this->matrix = allocateMatrix(other.nbRows, other.nbCols);
+
+   for (int i = 0; i < other.nbRows; ++i) {
+      for (int j = 0; j < other.nbCols; ++j) {
+         this->matrix[i][j] = other.matrix[i][j];
+      }
+   }
+
+
+   this->nbRows = other.nbRows;
+   this->nbCols = other.nbCols;
+   this->modulo = other.modulo;
+
+   return *this;
+}
+
+void Matrix::deleteMatrix(unsigned int **matrixArray, size_t height) {
+   for (int i = 0; i < height; ++i) {
+         delete[] matrixArray[i];
+   }
+   delete[] matrixArray;
 }
 
 

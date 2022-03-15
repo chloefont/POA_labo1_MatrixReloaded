@@ -6,5 +6,6 @@ int main() {
    Tests::buildMatrixWithNullNbCols();
    Tests::buildMatrixWithNullModulo();
    Tests::buildCorrectMatrixWithCopyConstructor();
+   Tests::affectationOperator();
    return 0;
 }

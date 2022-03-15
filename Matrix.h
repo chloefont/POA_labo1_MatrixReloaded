@@ -12,6 +12,7 @@
 class Matrix {
 public:
    friend std::ostream& operator<<(std::ostream& os, const Matrix& matrix);
+   Matrix& operator=(const Matrix& other);
 
    friend bool operator==(const Matrix& m1, const Matrix& m2);
 
@@ -52,6 +53,9 @@ private:
 
    static void operation(Matrix& m1, const Matrix& m2, const Operation&
    op);
+
+   static void deleteMatrix(unsigned** matrixArray, size_t height);
+
 
    unsigned** matrix;
    size_t nbRows;
