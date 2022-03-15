@@ -7,12 +7,13 @@
 
 #include <iostream>
 #include "./operations/Operation.h"
+#include "tests/Tests.h"
 
 // TODO opérateur affectation
 class Matrix {
 public:
+   friend Tests;
 
-   /* A friend function that allows the `Matrix` class to print itself. */
    friend std::ostream& operator<<(std::ostream& os, const Matrix& matrix);
 
 
@@ -142,6 +143,8 @@ public:
     * @return The number of columns in the matrix.
     */
    size_t getNbCols() const;
+
+   unsigned getEl(size_t row, size_t col);
 
 private:
    Matrix(size_t n, size_t m, unsigned modulo, unsigned** otherMatrix);

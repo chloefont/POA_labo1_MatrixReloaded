@@ -79,7 +79,8 @@ Matrix::~Matrix() {
    deleteMatrix(matrix, nbRows);
 }
 
-Matrix::Matrix(size_t n, size_t m, unsigned modulo, unsigned** otherMatrix) : nbRows(n),
+Matrix::Matrix(size_t n, size_t m, unsigned modulo, unsigned** otherMatrix) :
+nbRows(n),
 nbCols(m), modulo(modulo) {
    if (n <= 0 || m <= 0 || modulo <= 0)
       throw runtime_error("Les nombres de lignes et colonnes ainsi que le modulo "
@@ -240,6 +241,10 @@ void Matrix::deleteMatrix(unsigned int **matrixArray, size_t height) {
          delete[] matrixArray[i];
    }
    delete[] matrixArray;
+}
+
+unsigned Matrix::getEl(size_t row, size_t col) {
+   return matrix[row][col];
 }
 
 
