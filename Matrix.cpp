@@ -64,8 +64,8 @@ Matrix::Matrix (size_t n, size_t m, unsigned modulo): nbRows(n), nbCols(m), modu
 
    for (size_t i = 0; i < n; i++) {
       for (size_t j = 0; j < m; j++) {
-         unsigned rdm = RandomNumberGenerator::getInstance().generate(0,(int)
-         modulo - 1);
+         auto& gen = RandomNumberGenerator::getInstance();
+         unsigned rdm = gen.generate(0,(int)modulo - 1);
          matrix[i][j] = rdm;
       }
    }
