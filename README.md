@@ -7,6 +7,8 @@ Les différentes opérations d'addition, de soustraction et de multiplication n�
 
 En ce qui concerne les possibles erreurs de paramètres des différentes méthodes, nous soulevons une exception lorsqu'un des paramètres viole une erreur de logique (ex : nombre de lignes ou de colonnes nul) et dans le cas où un pointeur serait nul. Nous avons fait l'hypothèse que l'utilisateur ne passerait pas de référence nulle par paramètre.
 
+Les soustraction sont effectuées sur des valeurs de type `unsigned`. Ainsi, lors d'une soustraction x1 - x2, en considérant que la valeur x2 est supérieure à x1, le résultat est obtenu par cyclicité et mis au modulo. Les valeurs finales sont donc bien entre 0 et modulo - 1.
+
 ## Tests
 
 ### Constructeur
