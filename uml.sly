@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="iso-8859-15" standalone="no"?>
+<classDiagram>
+  <diagramElements defaultViewEntities="ALL" defaultViewEnum="true" defaultViewMethods="TYPE_AND_NAME" defaultVisibleTypes="true" informations="" name="Matrix reloaded">
+    <inheritance id="5030">
+      <child>5026</child>
+      <parent>5025</parent>
+    </inheritance>
+    <inheritance id="5031">
+      <child>5027</child>
+      <parent>5025</parent>
+    </inheritance>
+    <inheritance id="5032">
+      <child>5028</child>
+      <parent>5025</parent>
+    </inheritance>
+    <entity entityType="INTERFACE" id="5025" isAbstract="true" name="Operation" visibility="PUBLIC">
+      <method isAbstract="true" isStatic="false" name="calculate" returnType="int" view="DEFAULT" visibility="PUBLIC"/>
+    </entity>
+    <entity entityType="CLASS" id="5026" isAbstract="false" name="Add" visibility="PUBLIC"/>
+    <entity entityType="CLASS" id="5027" isAbstract="false" name="Sub" visibility="PUBLIC"/>
+    <entity entityType="CLASS" id="5028" isAbstract="false" name="Mult" visibility="PUBLIC"/>
+    <entity entityType="CLASS" id="5127" isAbstract="false" name="Matrix" visibility="PUBLIC">
+      <method is-constructor="true" isAbstract="false" isStatic="false" name="Matrix" returnType="" view="DEFAULT" visibility="PUBLIC"/>
+      <method isAbstract="false" isStatic="false" name="addStatic" returnType="void" view="DEFAULT" visibility="PUBLIC"/>
+      <method isAbstract="false" isStatic="false" name="addSelf" returnType="void" view="DEFAULT" visibility="PUBLIC"/>
+      <method isAbstract="false" isStatic="false" name="addDynamic" returnType="void" view="DEFAULT" visibility="PUBLIC"/>
+      <method isAbstract="false" isStatic="false" name="subStatic" returnType="void" view="DEFAULT" visibility="PUBLIC"/>
+      <method isAbstract="false" isStatic="false" name="subSelf" returnType="void" view="DEFAULT" visibility="PUBLIC"/>
+      <method isAbstract="false" isStatic="false" name="subDynamic" returnType="void" view="DEFAULT" visibility="PUBLIC"/>
+      <method isAbstract="false" isStatic="false" name="multStatic" returnType="void" view="DEFAULT" visibility="PUBLIC"/>
+      <method isAbstract="false" isStatic="false" name="multSelf" returnType="void" view="DEFAULT" visibility="PUBLIC"/>
+      <method isAbstract="false" isStatic="false" name="multDynamic" returnType="void" view="DEFAULT" visibility="PUBLIC"/>
+      <method isAbstract="false" isStatic="false" name="allocateMatrix" returnType="void" view="DEFAULT" visibility="PRIVATE"/>
+      <method isAbstract="false" isStatic="true" name="operation" returnType="void" view="DEFAULT" visibility="PRIVATE"/>
+      <method isAbstract="false" isStatic="true" name="deleteMatrix" returnType="void" view="DEFAULT" visibility="PRIVATE"/>
+    </entity>
+    <entity entityType="CLASS" id="5128" isAbstract="false" name="Application" visibility="PUBLIC"/>
+  </diagramElements>
+  <umlView grid="10" name="Main view" open="true">
+    <relationView color="-12566464" relationId="5032">
+      <line>
+        <point>
+          <x>771</x>
+          <y>251</y>
+        </point>
+        <point>
+          <x>771</x>
+          <y>211</y>
+        </point>
+        <point>
+          <x>521</x>
+          <y>211</y>
+        </point>
+        <point>
+          <x>521</x>
+          <y>155</y>
+        </point>
+      </line>
+    </relationView>
+    <relationView color="-12566464" relationId="5031">
+      <line>
+        <point>
+          <x>521</x>
+          <y>251</y>
+        </point>
+        <point>
+          <x>521</x>
+          <y>155</y>
+        </point>
+      </line>
+    </relationView>
+    <relationView color="-12566464" relationId="5030">
+      <line>
+        <point>
+          <x>281</x>
+          <y>251</y>
+        </point>
+        <point>
+          <x>281</x>
+          <y>211</y>
+        </point>
+        <point>
+          <x>521</x>
+          <y>211</y>
+        </point>
+        <point>
+          <x>521</x>
+          <y>155</y>
+        </point>
+      </line>
+    </relationView>
+    <componentView color="-2079" componentID="5128" displayAttributes="true" displayDefault="true" displayMethods="true">
+      <geometry>
+        <x>1370</x>
+        <y>130</y>
+        <w>150</w>
+        <h>55</h>
+      </geometry>
+    </componentView>
+    <componentView color="-2079" componentID="5127" displayAttributes="true" displayDefault="true" displayMethods="true">
+      <geometry>
+        <x>1010</x>
+        <y>90</y>
+        <w>150</w>
+        <h>250</h>
+      </geometry>
+    </componentView>
+    <componentView color="-2079" componentID="5028" displayAttributes="true" displayDefault="true" displayMethods="true">
+      <geometry>
+        <x>690</x>
+        <y>250</y>
+        <w>150</w>
+        <h>55</h>
+      </geometry>
+    </componentView>
+    <componentView color="-2079" componentID="5027" displayAttributes="true" displayDefault="true" displayMethods="true">
+      <geometry>
+        <x>440</x>
+        <y>250</y>
+        <w>150</w>
+        <h>55</h>
+      </geometry>
+    </componentView>
+    <componentView color="-2079" componentID="5026" displayAttributes="true" displayDefault="true" displayMethods="true">
+      <geometry>
+        <x>200</x>
+        <y>250</y>
+        <w>150</w>
+        <h>55</h>
+      </geometry>
+    </componentView>
+    <componentView color="-2079" componentID="5025" displayAttributes="true" displayDefault="true" displayMethods="true">
+      <geometry>
+        <x>440</x>
+        <y>70</y>
+        <w>150</w>
+        <h>84</h>
+      </geometry>
+    </componentView>
+  </umlView>
+</classDiagram>

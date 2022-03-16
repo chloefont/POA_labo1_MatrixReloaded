@@ -1,4 +1,13 @@
 {
     "docwriter.style": "Javadoc",
-    "docwriter.progress.trackClasses": true
+    "docwriter.progress.trackClasses": true,
+    "files.associations": {
+        "istream": "cpp",
+        "new": "cpp",
+        "ostream": "cpp",
+        "stdexcept": "cpp",
+        "streambuf": "cpp",
+        "string_view": "cpp",
+        "system_error": "cpp"
+    }
 }

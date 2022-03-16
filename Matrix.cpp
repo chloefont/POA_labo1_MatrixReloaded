@@ -217,7 +217,6 @@ size_t Matrix::getNbCols() const {
 }
 
 Matrix& Matrix::operator=(const Matrix &other) {
-
    deleteMatrix(this->matrix, this->nbRows);
    this->matrix = allocateMatrix(other.nbRows, other.nbCols);
 
@@ -237,6 +236,9 @@ Matrix& Matrix::operator=(const Matrix &other) {
 
 
 void Matrix::deleteMatrix(unsigned int **matrixArray, size_t height) {
+   if(matrixArray == nullptr){
+      throw runtime_error("matrixArray is null");
+   }
    for (int i = 0; i < height; ++i) {
          delete[] matrixArray[i];
    }

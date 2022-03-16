@@ -9,20 +9,29 @@
 #include "./operations/Operation.h"
 #include "tests/Tests.h"
 
-// TODO opérateur affectation
 class Matrix {
 public:
-   friend Tests;
 
+   /**
+    * @brief Returns a ostream containing a formatted matrix.
+    * 
+    * @param os 
+    * @param matrix 
+    * @return std::ostream& 
+    */
    friend std::ostream& operator<<(std::ostream& os, const Matrix& matrix);
 
-
-   /* Creating a copy of the matrix other and assigning it to the current matrix. */
+   /**
+    * Copies the other matrix into the current matrix.
+    * 
+    * @param other 
+    * @return Matrix& 
+    */
    Matrix& operator=(const Matrix& other);
 
-   //TODO pas très clair
+   
    /**
-    * If the two matrices are equal, then they have the same number of rows, columns, and modulo
+    * Matrix are equal if they have the same size, the same values and the same modulo.
     * 
     * @param m1 the first matrix
     * @param m2 the matrix to compare with m1
@@ -49,20 +58,21 @@ public:
    Matrix(size_t N, size_t M, unsigned modulo);
 
    /**
-    * @brief Copy the other Matrix into a new Matrix.
+    * Copy the other Matrix into a new Matrix.
     * 
-    * @param other 
+    * @param other the other Matrix
     */
    Matrix(const Matrix& other);
 
    /**
-    * @brief Destroy the Matrix object
+    * Destroy the Matrix object.
     * 
     */
    ~Matrix();
 
    /**
-    * Add the values of the other matrix to the values of a copy of this matrix.
+    * Create a new matrix with the values of the other matrix added to the values of this matrix.
+    * It resize the returned matrix if the other is bigger than this matrix.
     * 
     * @param other The matrix to add to this one.
     * @return A new Matrix object.
@@ -71,14 +81,15 @@ public:
 
    /**
     * Add the elements of the
-    * matrix other to the elements of this matrix.
+    * other matrix to the elements of this matrix.
     * 
     * @param other the matrix to add to this one
     */
    void addSelf(const Matrix& other);
 
    /**
-    * Add the values of the other matrix to the values of a copy of this matrix.
+    * Create a new matrix with the values of the other matrix added to the values of this matrix.
+    * It resize the returned matrix if the other is bigger than this matrix.
     * 
     * @param other The matrix to add to this one.
     * @return A new Matrix object that is the result of the addition of the two matrices.
@@ -86,7 +97,8 @@ public:
    Matrix* addDynamic(const Matrix& other);
 
    /**
-    * This function subtracts the values of the other matrix from the values of a copy of this matrix.
+    * Creates a new matrix with the values of this matrix substracted with the values of the other matrix.
+    * It resize the returned matrix if the other is bigger than this matrix.
     * 
     * @param other The matrix to subtract from this matrix.
     * @return A new Matrix object.
@@ -101,7 +113,8 @@ public:
    void subSelf(const Matrix& other);
 
    /**
-    * This function subtracts the values of the other matrix from the values of a copy of this matrix.
+    * Creates a new matrix with the values of this matrix substracted with the values of the other matrix.
+    * It resize the returned matrix if the other is bigger than this matrix.
     * 
     * @param other The matrix to subtract from this matrix.
     * @return A new Matrix object.
@@ -110,6 +123,7 @@ public:
 
    /**
     * This function takes two matrices and multiplies them together into a new Matrix.
+    * It resize the returned matrix if the other is bigger than this matrix.
     * 
     * @param other the other matrix to be multiplied with this matrix
     * @return The result of the multiplication in a new Matrix.
@@ -125,6 +139,7 @@ public:
 
    /**
     * This function takes two matrices and multiplies them together into a new Matrix.
+    * It resize the returned matrix if the other is bigger than this matrix.
     * 
     * @param other the matrix to multiply with.
     * @return A new Matrix object that is the result of the multiplication.
@@ -145,6 +160,14 @@ public:
     */
    size_t getNbCols() const;
 
+
+   /**
+    * Get the value at a position in the matrix.
+    * 
+    * @param row 
+    * @param col 
+    * @return unsigned 
+    */
    unsigned getEl(size_t row, size_t col);
 
 private:
