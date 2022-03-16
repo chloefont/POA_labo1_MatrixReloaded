@@ -2,11 +2,9 @@
 // Created by cfont on 24.02.2022.
 //
 
-#include <cstdlib>
 #include <iostream>
-#include <ctime>
 #include <string>
-#include <math.h>
+#include <cstring>
 #include "Matrix.h"
 #include "operations/Add.h"
 #include "operations/Sub.h"
@@ -24,8 +22,7 @@ ostream& operator<< (ostream& os, const Matrix& matrix) {
          if (j < (matrix.nbCols - 1))
             str += " ";
       }
-      if(i != matrix.nbRows - 1)
-         str += "\n";
+      str += "\n";
    }
 
    return os << str;
@@ -40,10 +37,8 @@ bool operator==(const Matrix &m1, const Matrix &m2) {
       return false;
 
    for (size_t i = 0; i < m1.nbRows; i++) {
-      for (size_t j = 0; j < m1.nbCols; j++) {
-         if (m1.matrix[i][j] != m2.matrix[i][j])
-            return false;
-      }
+      if(memcmp(m1.matrix[i], m2.matrix[i], m1.nbCols * sizeof(unsigned)) != 0)
+         return false;
    }
 
    return true;
@@ -91,9 +86,7 @@ nbCols(m), modulo(modulo) {
    matrix = allocateMatrix(n, m);
 
    for (size_t i = 0; i < n; i++) {
-      for (size_t j = 0; j < m; j++) {
-         matrix[i][j] = otherMatrix[i][j];
-      }
+         memcpy(matrix[i], otherMatrix[i], m * sizeof(unsigned));
    }
 }
 
@@ -219,13 +212,12 @@ size_t Matrix::getNbCols() const {
 }
 
 Matrix& Matrix::operator=(const Matrix &other) {
+   if(&other == this) return *this;
    deleteMatrix(this->matrix, this->nbRows);
    this->matrix = allocateMatrix(other.nbRows, other.nbCols);
 
    for (int i = 0; i < other.nbRows; ++i) {
-      for (int j = 0; j < other.nbCols; ++j) {
-         this->matrix[i][j] = other.matrix[i][j];
-      }
+      memcpy(matrix[i], other.matrix[i], other.nbCols * sizeof(unsigned));
    }
 
 
