@@ -50,7 +50,8 @@ public:
 
    /**
     * Constructor that creates a matrix with the given number of rows and columns.
-    * 
+    * The modulo is applied to every value of the matrix.
+    *
     * @param nbRows the number of rows
     * @param nbCols the number of columns
     * @param modulo the modulo
