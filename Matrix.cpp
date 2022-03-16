@@ -60,7 +60,6 @@ Matrix::Matrix (size_t n, size_t m, unsigned modulo): nbRows(n), nbCols(m), modu
       throw runtime_error("Les nombres de lignes et colonnes ainsi que le modulo "
                           "doivent etre strictement positifs.");
 
-   //TODO Il aurait été possible de créer un tableau contiguë dans la mémoire
    matrix = allocateMatrix(n, m);
 
    for (size_t i = 0; i < n; i++) {
@@ -82,6 +81,9 @@ Matrix::~Matrix() {
 Matrix::Matrix(size_t n, size_t m, unsigned modulo, unsigned** otherMatrix) :
 nbRows(n),
 nbCols(m), modulo(modulo) {
+   if (otherMatrix == nullptr)
+      throw runtime_error("La matrice ne peut pas être un pointeur sur null");
+
    if (n <= 0 || m <= 0 || modulo <= 0)
       throw runtime_error("Les nombres de lignes et colonnes ainsi que le modulo "
                           "doivent etre strictement positifs.");

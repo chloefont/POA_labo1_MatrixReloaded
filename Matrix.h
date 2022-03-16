@@ -72,7 +72,7 @@ public:
 
    /**
     * Create a new matrix with the values of the other matrix added to the values of this matrix.
-    * It resize the returned matrix if the other is bigger than this matrix.
+    * It resize the returned matrix if other is bigger than this matrix.
     * 
     * @param other The matrix to add to this one.
     * @return A new Matrix object.
@@ -80,8 +80,7 @@ public:
    Matrix addStatic(const Matrix& other);
 
    /**
-    * Add the elements of the
-    * other matrix to the elements of this matrix.
+    * Add the elements of the other matrix to the elements of this matrix.
     * 
     * @param other the matrix to add to this one
     */
@@ -171,6 +170,13 @@ public:
    unsigned getEl(size_t row, size_t col);
 
 private:
+   /**
+    * TODO
+    * @param n
+    * @param m
+    * @param modulo
+    * @param otherMatrix
+    */
    Matrix(size_t n, size_t m, unsigned modulo, unsigned** otherMatrix);
 
    /**
