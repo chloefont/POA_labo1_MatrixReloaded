@@ -14,9 +14,9 @@ public:
     * 
     * @param num1 
     * @param num2 
-    * @return int 
+    * @return unsigned
     */
-   int calculate(int num1, int num2) const override;
+   unsigned calculate(unsigned num1, unsigned num2) const override;
 };
 
 

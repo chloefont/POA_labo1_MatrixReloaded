@@ -190,7 +190,7 @@ void Matrix::operation(Matrix &m1, const Matrix &m2, const Operation &op) {
          unsigned valM2 = i < m2.nbRows && j < m2.nbCols ? m2.matrix[i][j] : 0;
          unsigned valTemp = i < m1.nbRows && j < m1.nbCols ? temp[i][j] : 0;
 
-         m1.matrix[i][j] = op.calculate(valTemp, valM2);
+         m1.matrix[i][j] = op.calculate(valTemp, valM2) % m1.modulo;
       }
    }
    //delete m1.matrix;

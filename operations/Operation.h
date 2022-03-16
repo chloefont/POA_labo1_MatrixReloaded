@@ -13,9 +13,9 @@ public:
     * 
     * @param num1 
     * @param num2 
-    * @return int 
+    * @return unsigned
     */
-   virtual int calculate(int num1, int num2) const = 0;
+   virtual unsigned calculate(unsigned num1, unsigned num2) const = 0;
 };
 
 #endif //POA_LABO1_MATRIXRELOADED_OPERATION_H

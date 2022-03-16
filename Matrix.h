@@ -20,6 +20,7 @@ public:
    /* Creating a copy of the matrix other and assigning it to the current matrix. */
    Matrix& operator=(const Matrix& other);
 
+   //TODO pas très clair
    /**
     * If the two matrices are equal, then they have the same number of rows, columns, and modulo
     * 

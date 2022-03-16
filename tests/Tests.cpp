@@ -148,7 +148,7 @@ void Tests::correctAddStaticWithSameSize() {
 
       for (size_t i = 0; i < nbRows; i++) {
          for (size_t j = 0; j < nbCols; j++) {
-            if (m3.getEl(i, j) != m1.getEl(i, j) + m2.getEl(i, j))
+            if (m3.getEl(i, j) != (m1.getEl(i, j) + m2.getEl(i, j)) % modulo)
                got = "failed";
          }
       }
@@ -187,7 +187,7 @@ void Tests::correctAddStaticWithDifferentSize() {
                unsigned val2 = i < m2.getNbRows() && j < m2.getNbCols() ? m2.getEl
                   (i, j) : 0;
 
-               if (m3.getEl(i, j) != val1 + val2)
+               if (m3.getEl(i, j) != (val1 + val2) % modulo)
                   got = "failed";
             }
          }
@@ -242,7 +242,7 @@ void Tests::correctAddSelfWithSameSize() {
 
       for (size_t i = 0; i < nbRows; i++) {
          for (size_t j = 0; j < nbCols; j++) {
-            if (m1.getEl(i, j) != tmp.getEl(i, j) + m2.getEl(i, j))
+            if (m1.getEl(i, j) != (tmp.getEl(i, j) + m2.getEl(i, j)) % modulo)
                got = "failed";
          }
       }
@@ -282,7 +282,7 @@ void Tests::correctAddSelfWithDifferentSize() {
                unsigned val2 = i < m2.getNbRows() && j < m2.getNbCols() ? m2.getEl
                   (i, j) : 0;
 
-               if (m1.getEl(i, j) != val1 + val2)
+               if (m1.getEl(i, j) != (val1 + val2) % modulo)
                   got = "failed";
             }
          }
@@ -338,7 +338,7 @@ void Tests::correctAddDynamicWithSameSize() {
 
       for (size_t i = 0; i < nbRows; i++) {
          for (size_t j = 0; j < nbCols; j++) {
-            if (m3->getEl(i, j) != m1.getEl(i, j) + m2.getEl(i, j))
+            if (m3->getEl(i, j) != (m1.getEl(i, j) + m2.getEl(i, j)) % modulo)
                got = "failed";
          }
       }
@@ -382,7 +382,7 @@ void Tests::correctAddDynamicWithDifferentSize() {
                unsigned val2 = i < m2.getNbRows() && j < m2.getNbCols() ? m2.getEl
                   (i, j) : 0;
 
-               if (m3->getEl(i, j) != val1 + val2)
+               if (m3->getEl(i, j) != (val1 + val2) % modulo)
                   got = "failed";
             }
          }
@@ -442,7 +442,7 @@ void Tests::correctSubStaticWithSameSize() {
 
       for (size_t i = 0; i < nbRows; i++) {
          for (size_t j = 0; j < nbCols; j++) {
-            if (m3.getEl(i, j) != m1.getEl(i, j) - m2.getEl(i, j))
+            if (m3.getEl(i, j) != (m1.getEl(i, j) - m2.getEl(i, j)) % modulo)
                got = "failed";
          }
       }
@@ -481,7 +481,7 @@ void Tests::correctSubStaticWithDifferentSize() {
                unsigned val2 = i < m2.getNbRows() && j < m2.getNbCols() ? m2.getEl
                   (i, j) : 0;
 
-               if (m3.getEl(i, j) != val1 - val2)
+               if (m3.getEl(i, j) != (val1 - val2) % modulo)
                   got = "failed";
             }
          }
@@ -536,7 +536,7 @@ void Tests::correctSubSelfWithSameSize() {
 
       for (size_t i = 0; i < nbRows; i++) {
          for (size_t j = 0; j < nbCols; j++) {
-            if (m1.getEl(i, j) != tmp.getEl(i, j) - m2.getEl(i, j))
+            if (m1.getEl(i, j) != (tmp.getEl(i, j) - m2.getEl(i, j)) % modulo)
                got = "failed";
          }
       }
@@ -576,7 +576,7 @@ void Tests::correctSubSelfWithDifferentSize() {
                unsigned val2 = i < m2.getNbRows() && j < m2.getNbCols() ? m2.getEl
                   (i, j) : 0;
 
-               if (m1.getEl(i, j) != val1 - val2)
+               if (m1.getEl(i, j) != (val1 - val2) % modulo)
                   got = "failed";
             }
          }
@@ -632,7 +632,7 @@ void Tests::correctSubDynamicWithSameSize() {
 
       for (size_t i = 0; i < nbRows; i++) {
          for (size_t j = 0; j < nbCols; j++) {
-            if (m3->getEl(i, j) != m1.getEl(i, j) - m2.getEl(i, j))
+            if (m3->getEl(i, j) != (m1.getEl(i, j) - m2.getEl(i, j)) % modulo)
                got = "failed";
          }
       }
@@ -676,7 +676,7 @@ void Tests::correctSubDynamicWithDifferentSize() {
                unsigned val2 = i < m2.getNbRows() && j < m2.getNbCols() ? m2.getEl
                   (i, j) : 0;
 
-               if (m3->getEl(i, j) != val1 - val2)
+               if (m3->getEl(i, j) != (val1 - val2) % modulo)
                   got = "failed";
             }
          }
@@ -736,7 +736,7 @@ void Tests::correctMultStaticWithSameSize() {
 
       for (size_t i = 0; i < nbRows; i++) {
          for (size_t j = 0; j < nbCols; j++) {
-            if (m3.getEl(i, j) != m1.getEl(i, j) * m2.getEl(i, j))
+            if (m3.getEl(i, j) != (m1.getEl(i, j) * m2.getEl(i, j)) % modulo)
                got = "failed";
          }
       }
@@ -775,7 +775,7 @@ void Tests::correctMultStaticWithDifferentSize() {
                unsigned val2 = i < m2.getNbRows() && j < m2.getNbCols() ? m2.getEl
                   (i, j) : 0;
 
-               if (m3.getEl(i, j) != val1 * val2)
+               if (m3.getEl(i, j) != (val1 * val2) % modulo)
                   got = "failed";
             }
          }
@@ -830,7 +830,7 @@ void Tests::correctMultSelfWithSameSize() {
 
       for (size_t i = 0; i < nbRows; i++) {
          for (size_t j = 0; j < nbCols; j++) {
-            if (m1.getEl(i, j) != tmp.getEl(i, j) * m2.getEl(i, j))
+            if (m1.getEl(i, j) != (tmp.getEl(i, j) * m2.getEl(i, j)) % modulo)
                got = "failed";
          }
       }
@@ -870,7 +870,7 @@ void Tests::correctMultSelfWithDifferentSize() {
                unsigned val2 = i < m2.getNbRows() && j < m2.getNbCols() ? m2.getEl
                   (i, j) : 0;
 
-               if (m1.getEl(i, j) != val1 * val2)
+               if (m1.getEl(i, j) != (val1 * val2) % modulo)
                   got = "failed";
             }
          }
@@ -926,7 +926,7 @@ void Tests::correctMultDynamicWithSameSize() {
 
       for (size_t i = 0; i < nbRows; i++) {
          for (size_t j = 0; j < nbCols; j++) {
-            if (m3->getEl(i, j) != m1.getEl(i, j) * m2.getEl(i, j))
+            if (m3->getEl(i, j) != (m1.getEl(i, j) * m2.getEl(i, j)) % modulo)
                got = "failed";
          }
       }
@@ -970,7 +970,7 @@ void Tests::correctMultDynamicWithDifferentSize() {
                unsigned val2 = i < m2.getNbRows() && j < m2.getNbCols() ? m2.getEl
                   (i, j) : 0;
 
-               if (m3->getEl(i, j) != val1 * val2)
+               if (m3->getEl(i, j) != (val1 * val2) % modulo)
                   got = "failed";
             }
          }
@@ -1010,22 +1010,4 @@ void Tests::multDynamicWithDifferentModulo() {
 
    printResults("dynamic multiplication with different modulo", expected, got);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

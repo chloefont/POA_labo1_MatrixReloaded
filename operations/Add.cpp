@@ -1,5 +1,5 @@
 #include "Add.h"
 
-int Add::calculate(int num1, int num2) const {
+unsigned Add::calculate(unsigned num1, unsigned num2) const {
    return num1 + num2;
 }

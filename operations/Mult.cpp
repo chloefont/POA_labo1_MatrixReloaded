@@ -4,6 +4,6 @@
 
 #include "Mult.h"
 
-int Mult::calculate(int num1, int num2) const {
+unsigned Mult::calculate(unsigned num1, unsigned num2) const {
    return num1 * num2;
 }
