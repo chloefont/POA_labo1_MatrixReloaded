@@ -1,19 +1,17 @@
 #include <iostream>
-#include "Matrix.h"
+#include "Application.h"
 
 using namespace std;
 
 
-int main() {
-   Matrix m(5, 5, 5);
-   Matrix m2(4, 4, 5);
+int main(int argc, char** argv) {
+   unsigned n1 = stoi(argv[1]);
+   unsigned m1 = stoi(argv[2]);
+   unsigned n2 = stoi(argv[3]);
+   unsigned m2 = stoi(argv[4]);
+   unsigned modulo = stoi(argv[5]);
 
-   Matrix* ptr = nullptr;
+   Application app(n1, m1, n2, m2, modulo);
 
-   m = *ptr;
-
-   cout << m << endl << m2 << endl;
-   m.addStatic(m2);
-   cout << m;
-   return 0;
+   return EXIT_SUCCESS;
 }

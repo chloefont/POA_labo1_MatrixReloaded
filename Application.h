@@ -7,7 +7,9 @@
 
 
 class Application {
-
+public:
+   Application(unsigned int n1, unsigned int m1, unsigned int n2,
+               unsigned int m2, unsigned modulo);
 };
 
 

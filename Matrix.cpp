@@ -11,6 +11,7 @@
 #include "operations/Add.h"
 #include "operations/Sub.h"
 #include "operations/Mult.h"
+#include "Generator/RandomNumberGenerator.h"
 
 using namespace std;
 
@@ -23,8 +24,8 @@ ostream& operator<< (ostream& os, const Matrix& matrix) {
          if (j < (matrix.nbCols - 1))
             str += " ";
       }
-
-      str += "\n";
+      if(i != matrix.nbRows - 1)
+         str += "\n";
    }
 
    return os << str;
@@ -62,12 +63,11 @@ Matrix::Matrix (size_t n, size_t m, unsigned modulo): nbRows(n), nbCols(m), modu
    //TODO Il aurait été possible de créer un tableau contiguë dans la mémoire
    matrix = allocateMatrix(n, m);
 
-   srand((unsigned )time(0));
-
    for (size_t i = 0; i < n; i++) {
       for (size_t j = 0; j < m; j++) {
-         matrix[i][j] = (unsigned) round((1 + rand() / (RAND_MAX + 1.0) * modulo)) %
-            modulo;
+         unsigned rdm = RandomNumberGenerator::getInstance().generate(0,(int)
+         modulo - 1);
+         matrix[i][j] = rdm;
       }
    }
 }

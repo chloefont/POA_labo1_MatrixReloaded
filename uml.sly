@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="iso-8859-15" standalone="no"?>
 <classDiagram>
   <diagramElements defaultViewEntities="ALL" defaultViewEnum="true" defaultViewMethods="TYPE_AND_NAME" defaultVisibleTypes="true" informations="" name="Matrix reloaded">
+    <entity entityType="CLASS" id="6370" isAbstract="false" name="RandomNumberGenerator" visibility="PUBLIC">
+      <method is-constructor="true" isAbstract="false" isStatic="false" name="RandomNumberGenerator" returnType="" view="DEFAULT" visibility="PRIVATE"/>
+      <method isAbstract="false" isStatic="false" name="getInstance" returnType="RandomNumberGenerator" view="DEFAULT" visibility="PUBLIC"/>
+      <method isAbstract="false" isStatic="false" name="generate" returnType="int" view="DEFAULT" visibility="PUBLIC">
+        <variable const="false" name="min" type="int"/>
+        <variable const="false" name="max" type="int"/>
+      </method>
+    </entity>
     <inheritance id="5030">
       <child>5026</child>
       <parent>5025</parent>
@@ -14,27 +22,117 @@
       <parent>5025</parent>
     </inheritance>
     <entity entityType="INTERFACE" id="5025" isAbstract="true" name="Operation" visibility="PUBLIC">
-      <method isAbstract="true" isStatic="false" name="calculate" returnType="int" view="DEFAULT" visibility="PUBLIC"/>
+      <method isAbstract="true" isStatic="false" name="calculate" returnType="unsigned" view="DEFAULT" visibility="PUBLIC">
+        <variable const="false" name="num1" type="unsigned"/>
+        <variable const="false" name="num2" type="unsigned"/>
+      </method>
     </entity>
-    <entity entityType="CLASS" id="5026" isAbstract="false" name="Add" visibility="PUBLIC"/>
-    <entity entityType="CLASS" id="5027" isAbstract="false" name="Sub" visibility="PUBLIC"/>
-    <entity entityType="CLASS" id="5028" isAbstract="false" name="Mult" visibility="PUBLIC"/>
+    <entity entityType="CLASS" id="5026" isAbstract="false" name="Add" visibility="PUBLIC">
+      <method isAbstract="false" isStatic="false" name="calculate" returnType="unsigned" view="DEFAULT" visibility="PUBLIC">
+        <variable const="false" name="num1" type="unsigned"/>
+        <variable const="false" name="num2" type="unsigned"/>
+      </method>
+    </entity>
+    <entity entityType="CLASS" id="5027" isAbstract="false" name="Sub" visibility="PUBLIC">
+      <method isAbstract="false" isStatic="false" name="calculate" returnType="unsigned" view="DEFAULT" visibility="PUBLIC">
+        <variable const="false" name="num1" type="unsigned"/>
+        <variable const="false" name="num2" type="unsigned"/>
+      </method>
+    </entity>
+    <entity entityType="CLASS" id="5028" isAbstract="false" name="Mult" visibility="PUBLIC">
+      <method isAbstract="false" isStatic="false" name="calculate" returnType="unsigned" view="DEFAULT" visibility="PUBLIC">
+        <variable const="false" name="num1" type="unsigned"/>
+        <variable const="false" name="num2" type="unsigned"/>
+      </method>
+    </entity>
     <entity entityType="CLASS" id="5127" isAbstract="false" name="Matrix" visibility="PUBLIC">
-      <method is-constructor="true" isAbstract="false" isStatic="false" name="Matrix" returnType="" view="DEFAULT" visibility="PUBLIC"/>
-      <method isAbstract="false" isStatic="false" name="addStatic" returnType="void" view="DEFAULT" visibility="PUBLIC"/>
-      <method isAbstract="false" isStatic="false" name="addSelf" returnType="void" view="DEFAULT" visibility="PUBLIC"/>
-      <method isAbstract="false" isStatic="false" name="addDynamic" returnType="void" view="DEFAULT" visibility="PUBLIC"/>
-      <method isAbstract="false" isStatic="false" name="subStatic" returnType="void" view="DEFAULT" visibility="PUBLIC"/>
-      <method isAbstract="false" isStatic="false" name="subSelf" returnType="void" view="DEFAULT" visibility="PUBLIC"/>
-      <method isAbstract="false" isStatic="false" name="subDynamic" returnType="void" view="DEFAULT" visibility="PUBLIC"/>
-      <method isAbstract="false" isStatic="false" name="multStatic" returnType="void" view="DEFAULT" visibility="PUBLIC"/>
-      <method isAbstract="false" isStatic="false" name="multSelf" returnType="void" view="DEFAULT" visibility="PUBLIC"/>
-      <method isAbstract="false" isStatic="false" name="multDynamic" returnType="void" view="DEFAULT" visibility="PUBLIC"/>
-      <method isAbstract="false" isStatic="false" name="allocateMatrix" returnType="void" view="DEFAULT" visibility="PRIVATE"/>
-      <method isAbstract="false" isStatic="true" name="operation" returnType="void" view="DEFAULT" visibility="PRIVATE"/>
-      <method isAbstract="false" isStatic="true" name="deleteMatrix" returnType="void" view="DEFAULT" visibility="PRIVATE"/>
+      <attribute const="false" defaultValue="" isStatic="false" name="matrix" type="unsigned**" visibility="PRIVATE"/>
+      <attribute const="false" defaultValue="" isStatic="false" name="nbRows" type="size_t" visibility="PRIVATE"/>
+      <attribute const="false" defaultValue="" isStatic="false" name="nbCols" type="size_t" visibility="PRIVATE"/>
+      <attribute const="false" defaultValue="" isStatic="false" name="modulo" type="unsigned" visibility="PRIVATE"/>
+      <method is-constructor="true" isAbstract="false" isStatic="false" name="Matrix" returnType="" view="DEFAULT" visibility="PUBLIC">
+        <variable const="false" name="const_other" type="Matrix&amp;"/>
+      </method>
+      <method is-constructor="true" isAbstract="false" isStatic="false" name="Matrix" returnType="" view="DEFAULT" visibility="PUBLIC">
+        <variable const="false" name="N" type="size_t"/>
+        <variable const="false" name="M" type="size_t"/>
+        <variable const="false" name="modulo" type="unsigned"/>
+      </method>
+      <method is-constructor="true" isAbstract="false" isStatic="false" name="~Matrix" returnType="" view="DEFAULT" visibility="PUBLIC"/>
+      <method isAbstract="false" isStatic="false" name="addStatic" returnType="Matrix" view="DEFAULT" visibility="PUBLIC">
+        <variable const="false" name="const_other" type="Matrix&amp;"/>
+      </method>
+      <method isAbstract="false" isStatic="false" name="addSelf" returnType="void" view="DEFAULT" visibility="PUBLIC">
+        <variable const="false" name="const_other" type="Matrix&amp;"/>
+      </method>
+      <method isAbstract="false" isStatic="false" name="addDynamic" returnType="Matrix*" view="DEFAULT" visibility="PUBLIC">
+        <variable const="false" name="const_other" type="Matrix&amp;"/>
+      </method>
+      <method isAbstract="false" isStatic="false" name="subStatic" returnType="Matrix" view="DEFAULT" visibility="PUBLIC">
+        <variable const="false" name="const_other" type="Matrix&amp;"/>
+      </method>
+      <method isAbstract="false" isStatic="false" name="subSelf" returnType="void" view="DEFAULT" visibility="PUBLIC">
+        <variable const="false" name="const_other" type="Matrix&amp;"/>
+      </method>
+      <method isAbstract="false" isStatic="false" name="subDynamic" returnType="Matrix*" view="DEFAULT" visibility="PUBLIC">
+        <variable const="false" name="const_other" type="Matrix&amp;"/>
+      </method>
+      <method isAbstract="false" isStatic="false" name="multStatic" returnType="Matrix" view="DEFAULT" visibility="PUBLIC">
+        <variable const="false" name="const_other" type="Matrix&amp;"/>
+      </method>
+      <method isAbstract="false" isStatic="false" name="multSelf" returnType="void" view="DEFAULT" visibility="PUBLIC">
+        <variable const="false" name="const_other" type="Matrix&amp;"/>
+      </method>
+      <method isAbstract="false" isStatic="false" name="multDynamic" returnType="Matrix*" view="DEFAULT" visibility="PUBLIC">
+        <variable const="false" name="const_other" type="Matrix&amp;"/>
+      </method>
+      <method isAbstract="false" isStatic="false" name="operator&lt;&lt;" returnType="ostream&amp;" view="DEFAULT" visibility="PUBLIC">
+        <variable const="false" name="os" type="ostream&amp;"/>
+        <variable const="false" name="const_matrix" type="Matrix&amp;"/>
+      </method>
+      <method isAbstract="false" isStatic="false" name="operator=" returnType="Matrix&amp;" view="DEFAULT" visibility="PUBLIC">
+        <variable const="false" name="const_other" type="Matrix&amp;"/>
+      </method>
+      <method isAbstract="false" isStatic="false" name="friend_operator==" returnType="bool" view="DEFAULT" visibility="PUBLIC">
+        <variable const="false" name="const_m1" type="Matrix&amp;"/>
+        <variable const="false" name="const_m2" type="Matrix&amp;"/>
+      </method>
+      <method isAbstract="false" isStatic="false" name="friend_operator!=" returnType="bool" view="DEFAULT" visibility="PUBLIC">
+        <variable const="false" name="const_m1" type="Matrix&amp;"/>
+        <variable const="false" name="const_m2" type="Matrix&amp;"/>
+      </method>
+      <method isAbstract="false" isStatic="false" name="getEl" returnType="unsigned" view="DEFAULT" visibility="PUBLIC">
+        <variable const="false" name="row" type="size_t"/>
+        <variable const="false" name="col" type="size_t"/>
+      </method>
+      <method is-constructor="true" isAbstract="false" isStatic="false" name="Matrix" returnType="" view="DEFAULT" visibility="PRIVATE">
+        <variable const="false" name="n" type="size_t"/>
+        <variable const="false" name="m" type="size_t"/>
+        <variable const="false" name="modulo" type="unsigned"/>
+        <variable const="false" name="otherMatrix" type="unsigned**"/>
+      </method>
+      <method isAbstract="false" isStatic="true" name="deleteMatrix" returnType="void" view="DEFAULT" visibility="PRIVATE">
+        <variable const="false" name="matrixArray" type="unsigned**"/>
+        <variable const="false" name="height" type="size_t"/>
+      </method>
+      <method isAbstract="false" isStatic="true" name="operation" returnType="void" view="DEFAULT" visibility="PRIVATE">
+        <variable const="false" name="m1" type="Matrix&amp;"/>
+        <variable const="false" name="const_m2" type="Matrix&amp;"/>
+        <variable const="false" name="op" type="Operation&amp;"/>
+      </method>
+      <method isAbstract="false" isStatic="true" name="allocateMatrix" returnType="unsigned**" view="DEFAULT" visibility="PRIVATE">
+        <variable const="false" name="nbRows" type="size_t"/>
+        <variable const="false" name="nbCols" type="size_t"/>
+      </method>
     </entity>
-    <entity entityType="CLASS" id="5128" isAbstract="false" name="Application" visibility="PUBLIC"/>
+    <entity entityType="CLASS" id="5128" isAbstract="false" name="Application" visibility="PUBLIC">
+      <method is-constructor="true" isAbstract="false" isStatic="false" name="Application" returnType="" view="DEFAULT" visibility="PUBLIC">
+        <variable const="false" name="n1" type="unsigned"/>
+        <variable const="false" name="m1" type="unsigned"/>
+        <variable const="false" name="n2" type="unsigned"/>
+        <variable const="false" name="m2" type="unsigned"/>
+      </method>
+    </entity>
   </diagramElements>
   <umlView grid="10" name="Main view" open="true">
     <relationView color="-12566464" relationId="5032">
@@ -91,18 +189,18 @@
     </relationView>
     <componentView color="-2079" componentID="5128" displayAttributes="true" displayDefault="true" displayMethods="true">
       <geometry>
-        <x>1370</x>
-        <y>130</y>
-        <w>150</w>
-        <h>55</h>
+        <x>1480</x>
+        <y>280</y>
+        <w>420</w>
+        <h>70</h>
       </geometry>
     </componentView>
     <componentView color="-2079" componentID="5127" displayAttributes="true" displayDefault="true" displayMethods="true">
       <geometry>
         <x>1010</x>
         <y>90</y>
-        <w>150</w>
-        <h>250</h>
+        <w>420</w>
+        <h>430</h>
       </geometry>
     </componentView>
     <componentView color="-2079" componentID="5028" displayAttributes="true" displayDefault="true" displayMethods="true">
@@ -110,7 +208,7 @@
         <x>690</x>
         <y>250</y>
         <w>150</w>
-        <h>55</h>
+        <h>70</h>
       </geometry>
     </componentView>
     <componentView color="-2079" componentID="5027" displayAttributes="true" displayDefault="true" displayMethods="true">
@@ -118,7 +216,7 @@
         <x>440</x>
         <y>250</y>
         <w>150</w>
-        <h>55</h>
+        <h>70</h>
       </geometry>
     </componentView>
     <componentView color="-2079" componentID="5026" displayAttributes="true" displayDefault="true" displayMethods="true">
@@ -126,15 +224,23 @@
         <x>200</x>
         <y>250</y>
         <w>150</w>
-        <h>55</h>
+        <h>70</h>
       </geometry>
     </componentView>
     <componentView color="-2079" componentID="5025" displayAttributes="true" displayDefault="true" displayMethods="true">
       <geometry>
         <x>440</x>
         <y>70</y>
-        <w>150</w>
+        <w>300</w>
         <h>84</h>
+      </geometry>
+    </componentView>
+    <componentView color="-2079" componentID="6370" displayAttributes="true" displayDefault="true" displayMethods="true">
+      <geometry>
+        <x>1440</x>
+        <y>90</y>
+        <w>280</w>
+        <h>100</h>
       </geometry>
     </componentView>
   </umlView>

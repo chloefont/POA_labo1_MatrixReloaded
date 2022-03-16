@@ -509,6 +509,9 @@ void Tests::subStaticWithDifferentModulo() {
 
       Matrix m3 = m1.subStatic(m2);
 
+
+
+
    } catch (const invalid_argument& e) {
       got = "failed";
    }
