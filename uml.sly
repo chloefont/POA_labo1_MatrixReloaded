@@ -1,48 +1,24 @@
 <?xml version="1.0" encoding="iso-8859-15" standalone="no"?>
 <classDiagram>
   <diagramElements defaultViewEntities="ALL" defaultViewEnum="true" defaultViewMethods="TYPE_AND_NAME" defaultVisibleTypes="true" informations="" name="Matrix reloaded">
-    <entity entityType="CLASS" id="6370" isAbstract="false" name="RandomNumberGenerator" visibility="PUBLIC">
-      <method is-constructor="true" isAbstract="false" isStatic="false" name="RandomNumberGenerator" returnType="" view="DEFAULT" visibility="PRIVATE"/>
-      <method isAbstract="false" isStatic="false" name="getInstance" returnType="RandomNumberGenerator" view="DEFAULT" visibility="PUBLIC"/>
-      <method isAbstract="false" isStatic="false" name="generate" returnType="int" view="DEFAULT" visibility="PUBLIC">
-        <variable const="false" name="min" type="int"/>
-        <variable const="false" name="max" type="int"/>
-      </method>
-    </entity>
-    <inheritance id="5030">
+    <inheritance id="7746">
       <child>5026</child>
       <parent>5025</parent>
     </inheritance>
-    <inheritance id="5031">
-      <child>5027</child>
-      <parent>5025</parent>
-    </inheritance>
-    <inheritance id="5032">
+    <inheritance id="7745">
       <child>5028</child>
       <parent>5025</parent>
     </inheritance>
-    <entity entityType="INTERFACE" id="5025" isAbstract="true" name="Operation" visibility="PUBLIC">
-      <method isAbstract="true" isStatic="false" name="calculate" returnType="unsigned" view="DEFAULT" visibility="PUBLIC">
-        <variable const="false" name="num1" type="unsigned"/>
-        <variable const="false" name="num2" type="unsigned"/>
-      </method>
-    </entity>
-    <entity entityType="CLASS" id="5026" isAbstract="false" name="Add" visibility="PUBLIC">
-      <method isAbstract="false" isStatic="false" name="calculate" returnType="unsigned" view="DEFAULT" visibility="PUBLIC">
-        <variable const="false" name="num1" type="unsigned"/>
-        <variable const="false" name="num2" type="unsigned"/>
-      </method>
-    </entity>
-    <entity entityType="CLASS" id="5027" isAbstract="false" name="Sub" visibility="PUBLIC">
-      <method isAbstract="false" isStatic="false" name="calculate" returnType="unsigned" view="DEFAULT" visibility="PUBLIC">
-        <variable const="false" name="num1" type="unsigned"/>
-        <variable const="false" name="num2" type="unsigned"/>
-      </method>
-    </entity>
-    <entity entityType="CLASS" id="5028" isAbstract="false" name="Mult" visibility="PUBLIC">
-      <method isAbstract="false" isStatic="false" name="calculate" returnType="unsigned" view="DEFAULT" visibility="PUBLIC">
-        <variable const="false" name="num1" type="unsigned"/>
-        <variable const="false" name="num2" type="unsigned"/>
+    <inheritance id="7744">
+      <child>5027</child>
+      <parent>5025</parent>
+    </inheritance>
+    <entity entityType="CLASS" id="5128" isAbstract="false" name="Application" visibility="PUBLIC">
+      <method is-constructor="true" isAbstract="false" isStatic="false" name="Application" returnType="" view="DEFAULT" visibility="PUBLIC">
+        <variable const="false" name="n1" type="unsigned"/>
+        <variable const="false" name="m1" type="unsigned"/>
+        <variable const="false" name="n2" type="unsigned"/>
+        <variable const="false" name="m2" type="unsigned"/>
       </method>
     </entity>
     <entity entityType="CLASS" id="5127" isAbstract="false" name="Matrix" visibility="PUBLIC">
@@ -125,73 +101,129 @@
         <variable const="false" name="nbCols" type="size_t"/>
       </method>
     </entity>
-    <entity entityType="CLASS" id="5128" isAbstract="false" name="Application" visibility="PUBLIC">
-      <method is-constructor="true" isAbstract="false" isStatic="false" name="Application" returnType="" view="DEFAULT" visibility="PUBLIC">
-        <variable const="false" name="n1" type="unsigned"/>
-        <variable const="false" name="m1" type="unsigned"/>
-        <variable const="false" name="n2" type="unsigned"/>
-        <variable const="false" name="m2" type="unsigned"/>
+    <entity entityType="CLASS" id="5028" isAbstract="false" name="Mult" visibility="PUBLIC">
+      <method isAbstract="false" isStatic="false" name="calculate" returnType="unsigned" view="DEFAULT" visibility="PUBLIC">
+        <variable const="false" name="num1" type="unsigned"/>
+        <variable const="false" name="num2" type="unsigned"/>
+      </method>
+    </entity>
+    <entity entityType="CLASS" id="5027" isAbstract="false" name="Sub" visibility="PUBLIC">
+      <method isAbstract="false" isStatic="false" name="calculate" returnType="unsigned" view="DEFAULT" visibility="PUBLIC">
+        <variable const="false" name="num1" type="unsigned"/>
+        <variable const="false" name="num2" type="unsigned"/>
+      </method>
+    </entity>
+    <entity entityType="CLASS" id="5026" isAbstract="false" name="Add" visibility="PUBLIC">
+      <method isAbstract="false" isStatic="false" name="calculate" returnType="unsigned" view="DEFAULT" visibility="PUBLIC">
+        <variable const="false" name="num1" type="unsigned"/>
+        <variable const="false" name="num2" type="unsigned"/>
+      </method>
+    </entity>
+    <entity entityType="INTERFACE" id="5025" isAbstract="true" name="Operation" visibility="PUBLIC">
+      <method isAbstract="true" isStatic="false" name="calculate" returnType="unsigned" view="DEFAULT" visibility="PUBLIC">
+        <variable const="false" name="num1" type="unsigned"/>
+        <variable const="false" name="num2" type="unsigned"/>
+      </method>
+    </entity>
+    <entity entityType="CLASS" id="6370" isAbstract="false" name="RandomNumberGenerator" visibility="PUBLIC">
+      <method is-constructor="true" isAbstract="false" isStatic="false" name="RandomNumberGenerator" returnType="" view="DEFAULT" visibility="PRIVATE"/>
+      <method isAbstract="false" isStatic="false" name="getInstance" returnType="RandomNumberGenerator" view="DEFAULT" visibility="PUBLIC"/>
+      <method isAbstract="false" isStatic="false" name="generate" returnType="int" view="DEFAULT" visibility="PUBLIC">
+        <variable const="false" name="min" type="int"/>
+        <variable const="false" name="max" type="int"/>
       </method>
     </entity>
   </diagramElements>
   <umlView grid="10" name="Main view" open="true">
-    <relationView color="-12566464" relationId="5032">
+    <relationView color="-12566464" relationId="7744">
       <line>
         <point>
-          <x>771</x>
-          <y>251</y>
+          <x>631</x>
+          <y>341</y>
         </point>
         <point>
-          <x>771</x>
-          <y>211</y>
-        </point>
-        <point>
-          <x>521</x>
-          <y>211</y>
-        </point>
-        <point>
-          <x>521</x>
+          <x>631</x>
           <y>155</y>
         </point>
       </line>
     </relationView>
-    <relationView color="-12566464" relationId="5031">
+    <relationView color="-12566464" relationId="7745">
       <line>
         <point>
-          <x>521</x>
-          <y>251</y>
+          <x>831</x>
+          <y>261</y>
         </point>
         <point>
-          <x>521</x>
+          <x>831</x>
+          <y>221</y>
+        </point>
+        <point>
+          <x>631</x>
+          <y>221</y>
+        </point>
+        <point>
+          <x>631</x>
           <y>155</y>
         </point>
       </line>
     </relationView>
-    <relationView color="-12566464" relationId="5030">
+    <relationView color="-12566464" relationId="7746">
       <line>
         <point>
-          <x>281</x>
-          <y>251</y>
+          <x>351</x>
+          <y>261</y>
         </point>
         <point>
-          <x>281</x>
-          <y>211</y>
+          <x>351</x>
+          <y>221</y>
         </point>
         <point>
-          <x>521</x>
-          <y>211</y>
+          <x>631</x>
+          <y>221</y>
         </point>
         <point>
-          <x>521</x>
+          <x>631</x>
           <y>155</y>
         </point>
       </line>
     </relationView>
-    <componentView color="-2079" componentID="5128" displayAttributes="true" displayDefault="true" displayMethods="true">
+    <componentView color="-2079" componentID="6370" displayAttributes="true" displayDefault="true" displayMethods="true">
       <geometry>
-        <x>1480</x>
-        <y>280</y>
-        <w>420</w>
+        <x>1440</x>
+        <y>90</y>
+        <w>280</w>
+        <h>100</h>
+      </geometry>
+    </componentView>
+    <componentView color="-2079" componentID="5025" displayAttributes="true" displayDefault="true" displayMethods="true">
+      <geometry>
+        <x>450</x>
+        <y>70</y>
+        <w>350</w>
+        <h>84</h>
+      </geometry>
+    </componentView>
+    <componentView color="-2079" componentID="5026" displayAttributes="true" displayDefault="true" displayMethods="true">
+      <geometry>
+        <x>180</x>
+        <y>260</y>
+        <w>330</w>
+        <h>70</h>
+      </geometry>
+    </componentView>
+    <componentView color="-2079" componentID="5027" displayAttributes="true" displayDefault="true" displayMethods="true">
+      <geometry>
+        <x>460</x>
+        <y>340</y>
+        <w>330</w>
+        <h>70</h>
+      </geometry>
+    </componentView>
+    <componentView color="-2079" componentID="5028" displayAttributes="true" displayDefault="true" displayMethods="true">
+      <geometry>
+        <x>660</x>
+        <y>260</y>
+        <w>340</w>
         <h>70</h>
       </geometry>
     </componentView>
@@ -203,44 +235,12 @@
         <h>430</h>
       </geometry>
     </componentView>
-    <componentView color="-2079" componentID="5028" displayAttributes="true" displayDefault="true" displayMethods="true">
+    <componentView color="-2079" componentID="5128" displayAttributes="true" displayDefault="true" displayMethods="true">
       <geometry>
-        <x>690</x>
-        <y>250</y>
-        <w>150</w>
+        <x>1480</x>
+        <y>280</y>
+        <w>420</w>
         <h>70</h>
-      </geometry>
-    </componentView>
-    <componentView color="-2079" componentID="5027" displayAttributes="true" displayDefault="true" displayMethods="true">
-      <geometry>
-        <x>440</x>
-        <y>250</y>
-        <w>150</w>
-        <h>70</h>
-      </geometry>
-    </componentView>
-    <componentView color="-2079" componentID="5026" displayAttributes="true" displayDefault="true" displayMethods="true">
-      <geometry>
-        <x>200</x>
-        <y>250</y>
-        <w>150</w>
-        <h>70</h>
-      </geometry>
-    </componentView>
-    <componentView color="-2079" componentID="5025" displayAttributes="true" displayDefault="true" displayMethods="true">
-      <geometry>
-        <x>440</x>
-        <y>70</y>
-        <w>300</w>
-        <h>84</h>
-      </geometry>
-    </componentView>
-    <componentView color="-2079" componentID="6370" displayAttributes="true" displayDefault="true" displayMethods="true">
-      <geometry>
-        <x>1440</x>
-        <y>90</y>
-        <w>280</w>
-        <h>100</h>
       </geometry>
     </componentView>
   </umlView>

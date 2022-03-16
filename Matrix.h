@@ -171,13 +171,15 @@ public:
 
 private:
    /**
-    * TODO
-    * @param n
-    * @param m
-    * @param modulo
-    * @param otherMatrix
+    * Constructor that creates a matrix with the given number of rows and columns.
+    * The modulo is applied to every value of the martix.
+    * @param nbRows the number of rows
+    * @param nbCols the number of columns
+    * @param modulo the modulo
+    * @param matrix 2D array with the values to copy
     */
-   Matrix(size_t n, size_t m, unsigned modulo, unsigned** otherMatrix);
+
+   Matrix(size_t nbRows, size_t nbCols, unsigned modulo, unsigned** otherMatrix);
 
    /**
     * Allocate a matrix of unsigned integers

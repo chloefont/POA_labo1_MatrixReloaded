@@ -73,20 +73,20 @@ Matrix::~Matrix() {
    deleteMatrix(matrix, nbRows);
 }
 
-Matrix::Matrix(size_t n, size_t m, unsigned modulo, unsigned** otherMatrix) :
-nbRows(n),
-nbCols(m), modulo(modulo) {
+Matrix::Matrix(size_t nbRows, size_t nbCols, unsigned modulo, unsigned** otherMatrix) :
+   nbRows(nbRows),
+   nbCols(nbCols), modulo(modulo) {
    if (otherMatrix == nullptr)
       throw runtime_error("La matrice ne peut pas être un pointeur sur null");
 
-   if (n <= 0 || m <= 0 || modulo <= 0)
+   if (nbRows <= 0 || nbCols <= 0 || modulo <= 0)
       throw runtime_error("Les nombres de lignes et colonnes ainsi que le modulo "
                           "doivent etre strictement positifs.");
 
-   matrix = allocateMatrix(n, m);
+   matrix = allocateMatrix(nbRows, nbCols);
 
-   for (size_t i = 0; i < n; i++) {
-         memcpy(matrix[i], otherMatrix[i], m * sizeof(unsigned));
+   for (size_t i = 0; i < nbRows; i++) {
+         memcpy(matrix[i], otherMatrix[i], nbCols * sizeof(unsigned));
    }
 }
 
@@ -166,11 +166,9 @@ void Matrix::operation(Matrix &m1, const Matrix &m2, const Operation &op) {
    size_t colLengthMax = max(m1.getNbCols(), m2.getNbCols());
    unsigned ** temp = m1.matrix;
    bool allocated = false;
-   // stocke le pointeur sur m1.matrix dans tmp
 
    if (m1.getNbCols() < m2.getNbCols() || m1.getNbRows() < m2.getNbRows()) {
       m1.matrix = allocateMatrix(rowLengthMax, colLengthMax);
-      // alloue la nouvelle place
       allocated = true;
 
       if(temp == nullptr) {
@@ -178,7 +176,6 @@ void Matrix::operation(Matrix &m1, const Matrix &m2, const Operation &op) {
       }
 
    }
-   // itère sur la nouvelle matrice m1[i][j] = tmp[i][j] + m2[i][j]
 
    for(size_t i = 0; i < rowLengthMax; i++){
       for(size_t j = 0; j < colLengthMax; j++){
@@ -188,7 +185,6 @@ void Matrix::operation(Matrix &m1, const Matrix &m2, const Operation &op) {
          m1.matrix[i][j] = op.calculate(valTemp, valM2) % m1.modulo;
       }
    }
-   //delete m1.matrix;
 
    if (allocated) {
       for (size_t i = 0; i < m1.nbRows; i++)
