@@ -7,6 +7,6 @@
 
 | Fonction testée | Intitulé du test | Résultat attendu | Résultat obtenu |
 |----------|-------------|:------:|:------:|
-| Constructeur aléatoire | Construction d'une matrice avec un nombre de ligne et de colonnes strictement positifs | ok | ok |
-| col 2 is |    centered   |   $12 |
-| col 3 is | right-aligned |    $1 |
+| Constructeur aléatoire | Construction d'une matrice avec un nombre de lignes et de colonnes strictement positifs | ok | ok |
+| Constructeur aléatoire | Construction d'une matrice avec un nombre de lignes de 0 et un nombre de colonnes strictement positif | failed | failed |
+| Constructeur aléatoire | Construction d'une matrice avec un nombre de colonnes de 0 et un nombre de lignes strictement positif | failed | failed |
