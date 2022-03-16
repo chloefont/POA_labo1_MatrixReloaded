@@ -10,3 +10,5 @@
 | Constructeur aléatoire | Construction d'une matrice avec un nombre de lignes et de colonnes strictement positifs | ok | ok |
 | Constructeur aléatoire | Construction d'une matrice avec un nombre de lignes de 0 et un nombre de colonnes strictement positif | failed | failed |
 | Constructeur aléatoire | Construction d'une matrice avec un nombre de colonnes de 0 et un nombre de lignes strictement positif | failed | failed |
+| Constructeur de copie | Construction d'une matrice avec un nombre de lignes et de colonnes strictement positif avec le constructeur de copie | ok | ok |
+| Opérateur d'affectation | Affectation d'une matrice avec une autre matrice | ok | ok |
