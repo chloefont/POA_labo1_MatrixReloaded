@@ -1,5 +1,6 @@
 # POA labo1 - Matrix Reloaded
 ## Diagramme de classe
+![alt text](./uml_labo1.png)
 
 ## Choix de modélisation
 
