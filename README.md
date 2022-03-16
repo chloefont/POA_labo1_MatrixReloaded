@@ -3,6 +3,10 @@
 
 ## Choix de modélisation
 
+Les différentes opérations d'addition, de soustraction et de multiplication nécessitaient toutes une implémentation très similaire. Nous avons donc choisi de factoriser leur code et d'utiliser une méthode privée et statique `operation` prenant en paramètre les deux matrices ainsi qu'une référence sur un objet de l'opération en question. Cette dernière ne retourne aucun objet mais modifie la première matrice par paramètre. Cela nous permet ainsi d'utiliser cette unique méthodes pour les différentes opérations, qu'elles soient statiques, appliquées à l'objet lui-même ou dynamique.
+
+En ce qui concerne les possibles erreurs de paramètres des différentes méthodes, nous soulevons une exception lorsqu'un des paramètres viole une erreur de logique (ex : nombre de lignes ou de colonnes nul) et dans le cas où un pointeur serait nul. Nous avons fait l'hypothèse que l'utilisateur ne passerait pas de référence nulle par paramètre.
+
 ## Tests
 
 ### Constructeur
