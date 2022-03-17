@@ -1,7 +1,3 @@
-//
-// Created by cfont on 15.03.2022.
-//
-
 #ifndef POA_LABO1_MATRIXRELOADED_TESTS_H
 #define POA_LABO1_MATRIXRELOADED_TESTS_H
 

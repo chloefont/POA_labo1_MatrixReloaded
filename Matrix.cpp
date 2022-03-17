@@ -1,7 +1,3 @@
-//
-// Created by cfont on 24.02.2022.
-//
-
 #include <iostream>
 #include <string>
 #include <cstring>
@@ -238,8 +234,3 @@ void Matrix::deleteMatrix(unsigned int **matrixArray, size_t height) {
 unsigned Matrix::getEl(size_t row, size_t col) {
    return matrix[row][col];
 }
-
-
-
-
-

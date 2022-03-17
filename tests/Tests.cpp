@@ -1,7 +1,3 @@
-//
-// Created by cfont on 15.03.2022.
-//
-
 #include "Tests.h"
 #include "../Matrix.h"
 
@@ -16,15 +12,15 @@ got) {
 
 void Tests::buildCorrectMatrixWithRandomConstructor() {
    size_t nbRows = 5,
-          nbCols = 5;
+      nbCols = 5;
    unsigned modulo = 7;
 
    string expected = "ok",
-          got = "ok";
+      got = "ok";
 
    try {
       Matrix m(nbRows, nbCols, modulo);
-   } catch (const runtime_error& e) {
+   } catch (const runtime_error &e) {
       got = "failed";
    }
 
@@ -41,7 +37,7 @@ void Tests::buildMatrixWithNullNbRows() {
 
    try {
       Matrix m(nbRows, nbCols, modulo);
-   } catch (const runtime_error& e) {
+   } catch (const runtime_error &e) {
       got = "failed";
    }
 
@@ -50,7 +46,7 @@ void Tests::buildMatrixWithNullNbRows() {
 
 void Tests::buildMatrixWithNullNbCols() {
    size_t nbRows = 5,
-          nbCols = 0;
+      nbCols = 0;
    unsigned modulo = 7;
 
    string expected = "failed",
@@ -58,7 +54,7 @@ void Tests::buildMatrixWithNullNbCols() {
 
    try {
       Matrix m(nbRows, nbCols, modulo);
-   } catch (const runtime_error& e) {
+   } catch (const runtime_error &e) {
       got = "failed";
    }
 
@@ -67,7 +63,7 @@ void Tests::buildMatrixWithNullNbCols() {
 
 void Tests::buildMatrixWithNullModulo() {
    size_t nbRows = 5,
-          nbCols = 5;
+      nbCols = 5;
    unsigned modulo = 0;
 
    string expected = "failed",
@@ -75,7 +71,7 @@ void Tests::buildMatrixWithNullModulo() {
 
    try {
       Matrix m(nbRows, nbCols, modulo);
-   } catch (const runtime_error& e) {
+   } catch (const runtime_error &e) {
       got = "failed";
    }
 
@@ -84,11 +80,11 @@ void Tests::buildMatrixWithNullModulo() {
 
 void Tests::buildCorrectMatrixWithCopyConstructor() {
    size_t nbRows = 5,
-          nbCols = 5;
+      nbCols = 5;
    unsigned modulo = 7;
 
    string expected = "ok",
-          got = "ok";
+      got = "ok";
 
    try {
       Matrix m1(nbRows, nbCols, modulo);
@@ -96,7 +92,7 @@ void Tests::buildCorrectMatrixWithCopyConstructor() {
 
       if (m1 != m2)
          got = "failed";
-   } catch (const runtime_error& e) {
+   } catch (const runtime_error &e) {
       got = "failed";
    }
 
@@ -122,7 +118,7 @@ void Tests::affectationOperator() {
 
       if (m1 != m2)
          got = "failed";
-   } catch (const runtime_error& e) {
+   } catch (const runtime_error &e) {
       got = "failed";
    }
 
@@ -153,7 +149,7 @@ void Tests::correctAddStaticWithSameSize() {
          }
       }
 
-   } catch (const runtime_error& e) {
+   } catch (const runtime_error &e) {
       got = "failed";
    }
 
@@ -193,7 +189,7 @@ void Tests::correctAddStaticWithDifferentSize() {
          }
       }
 
-   } catch (const runtime_error& e) {
+   } catch (const runtime_error &e) {
       got = "failed";
    }
 
@@ -215,7 +211,7 @@ void Tests::addStaticWithDifferentModulo() {
 
       Matrix m3 = m1.addStatic(m2);
 
-   } catch (const invalid_argument& e) {
+   } catch (const invalid_argument &e) {
       got = "failed";
    }
 
@@ -247,7 +243,7 @@ void Tests::correctAddSelfWithSameSize() {
          }
       }
 
-   } catch (const runtime_error& e) {
+   } catch (const runtime_error &e) {
       got = "failed";
    }
 
@@ -288,7 +284,7 @@ void Tests::correctAddSelfWithDifferentSize() {
          }
       }
 
-   } catch (const runtime_error& e) {
+   } catch (const runtime_error &e) {
       got = "failed";
    }
 
@@ -310,7 +306,7 @@ void Tests::addSelfWithDifferentModulo() {
 
       m1.addSelf(m2);
 
-   } catch (const invalid_argument& e) {
+   } catch (const invalid_argument &e) {
       got = "failed";
    }
 
@@ -325,7 +321,7 @@ void Tests::correctAddDynamicWithSameSize() {
    string expected = "ok",
       got = "ok";
 
-   Matrix* m3;
+   Matrix *m3;
 
    try {
       Matrix m1(nbRows, nbCols, modulo);
@@ -343,7 +339,7 @@ void Tests::correctAddDynamicWithSameSize() {
          }
       }
 
-   } catch (const runtime_error& e) {
+   } catch (const runtime_error &e) {
       got = "failed";
       delete m3;
    }
@@ -363,7 +359,7 @@ void Tests::correctAddDynamicWithDifferentSize() {
    string expected = "ok",
       got = "ok";
 
-   Matrix* m3;
+   Matrix *m3;
 
    try {
       Matrix m1(nbRows1, nbCols1, modulo);
@@ -388,7 +384,7 @@ void Tests::correctAddDynamicWithDifferentSize() {
          }
       }
 
-   } catch (const runtime_error& e) {
+   } catch (const runtime_error &e) {
       got = "failed";
       delete m3;
    }
@@ -407,7 +403,7 @@ void Tests::addDynamicWithDifferentModulo() {
    string expected = "failed",
       got = "ok";
 
-   Matrix* m3;
+   Matrix *m3;
    try {
       Matrix m1(nbRows, nbCols, modulo1);
       Matrix m2(nbRows, nbCols, modulo2);
@@ -416,7 +412,7 @@ void Tests::addDynamicWithDifferentModulo() {
 
       delete m3;
 
-   } catch (const invalid_argument& e) {
+   } catch (const invalid_argument &e) {
       got = "failed";
    }
 
@@ -447,7 +443,7 @@ void Tests::correctSubStaticWithSameSize() {
          }
       }
 
-   } catch (const runtime_error& e) {
+   } catch (const runtime_error &e) {
       got = "failed";
    }
 
@@ -487,7 +483,7 @@ void Tests::correctSubStaticWithDifferentSize() {
          }
       }
 
-   } catch (const runtime_error& e) {
+   } catch (const runtime_error &e) {
       got = "failed";
    }
 
@@ -510,9 +506,7 @@ void Tests::subStaticWithDifferentModulo() {
       Matrix m3 = m1.subStatic(m2);
 
 
-
-
-   } catch (const invalid_argument& e) {
+   } catch (const invalid_argument &e) {
       got = "failed";
    }
 
@@ -544,7 +538,7 @@ void Tests::correctSubSelfWithSameSize() {
          }
       }
 
-   } catch (const runtime_error& e) {
+   } catch (const runtime_error &e) {
       got = "failed";
    }
 
@@ -585,7 +579,7 @@ void Tests::correctSubSelfWithDifferentSize() {
          }
       }
 
-   } catch (const runtime_error& e) {
+   } catch (const runtime_error &e) {
       got = "failed";
    }
 
@@ -607,7 +601,7 @@ void Tests::subSelfWithDifferentModulo() {
 
       m1.subSelf(m2);
 
-   } catch (const invalid_argument& e) {
+   } catch (const invalid_argument &e) {
       got = "failed";
    }
 
@@ -622,7 +616,7 @@ void Tests::correctSubDynamicWithSameSize() {
    string expected = "ok",
       got = "ok";
 
-   Matrix* m3;
+   Matrix *m3;
 
    try {
       Matrix m1(nbRows, nbCols, modulo);
@@ -640,7 +634,7 @@ void Tests::correctSubDynamicWithSameSize() {
          }
       }
 
-   } catch (const runtime_error& e) {
+   } catch (const runtime_error &e) {
       got = "failed";
       delete m3;
    }
@@ -660,7 +654,7 @@ void Tests::correctSubDynamicWithDifferentSize() {
    string expected = "ok",
       got = "ok";
 
-   Matrix* m3;
+   Matrix *m3;
 
    try {
       Matrix m1(nbRows1, nbCols1, modulo);
@@ -685,7 +679,7 @@ void Tests::correctSubDynamicWithDifferentSize() {
          }
       }
 
-   } catch (const runtime_error& e) {
+   } catch (const runtime_error &e) {
       got = "failed";
       delete m3;
    }
@@ -704,7 +698,7 @@ void Tests::subDynamicWithDifferentModulo() {
    string expected = "failed",
       got = "ok";
 
-   Matrix* m3;
+   Matrix *m3;
    try {
       Matrix m1(nbRows, nbCols, modulo1);
       Matrix m2(nbRows, nbCols, modulo2);
@@ -713,7 +707,7 @@ void Tests::subDynamicWithDifferentModulo() {
 
       delete m3;
 
-   } catch (const invalid_argument& e) {
+   } catch (const invalid_argument &e) {
       got = "failed";
    }
 
@@ -744,7 +738,7 @@ void Tests::correctMultStaticWithSameSize() {
          }
       }
 
-   } catch (const runtime_error& e) {
+   } catch (const runtime_error &e) {
       got = "failed";
    }
 
@@ -784,7 +778,7 @@ void Tests::correctMultStaticWithDifferentSize() {
          }
       }
 
-   } catch (const runtime_error& e) {
+   } catch (const runtime_error &e) {
       got = "failed";
    }
 
@@ -806,7 +800,7 @@ void Tests::multStaticWithDifferentModulo() {
 
       Matrix m3 = m1.multStatic(m2);
 
-   } catch (const invalid_argument& e) {
+   } catch (const invalid_argument &e) {
       got = "failed";
    }
 
@@ -838,7 +832,7 @@ void Tests::correctMultSelfWithSameSize() {
          }
       }
 
-   } catch (const runtime_error& e) {
+   } catch (const runtime_error &e) {
       got = "failed";
    }
 
@@ -879,7 +873,7 @@ void Tests::correctMultSelfWithDifferentSize() {
          }
       }
 
-   } catch (const runtime_error& e) {
+   } catch (const runtime_error &e) {
       got = "failed";
    }
 
@@ -901,7 +895,7 @@ void Tests::multSelfWithDifferentModulo() {
 
       m1.multSelf(m2);
 
-   } catch (const invalid_argument& e) {
+   } catch (const invalid_argument &e) {
       got = "failed";
    }
 
@@ -916,7 +910,7 @@ void Tests::correctMultDynamicWithSameSize() {
    string expected = "ok",
       got = "ok";
 
-   Matrix* m3;
+   Matrix *m3;
 
    try {
       Matrix m1(nbRows, nbCols, modulo);
@@ -934,7 +928,7 @@ void Tests::correctMultDynamicWithSameSize() {
          }
       }
 
-   } catch (const runtime_error& e) {
+   } catch (const runtime_error &e) {
       got = "failed";
       delete m3;
    }
@@ -954,7 +948,7 @@ void Tests::correctMultDynamicWithDifferentSize() {
    string expected = "ok",
       got = "ok";
 
-   Matrix* m3;
+   Matrix *m3;
 
    try {
       Matrix m1(nbRows1, nbCols1, modulo);
@@ -979,7 +973,7 @@ void Tests::correctMultDynamicWithDifferentSize() {
          }
       }
 
-   } catch (const runtime_error& e) {
+   } catch (const runtime_error &e) {
       got = "failed";
       delete m3;
    }
@@ -998,7 +992,7 @@ void Tests::multDynamicWithDifferentModulo() {
    string expected = "failed",
       got = "ok";
 
-   Matrix* m3;
+   Matrix *m3;
    try {
       Matrix m1(nbRows, nbCols, modulo1);
       Matrix m2(nbRows, nbCols, modulo2);
@@ -1007,10 +1001,9 @@ void Tests::multDynamicWithDifferentModulo() {
 
       delete m3;
 
-   } catch (const invalid_argument& e) {
+   } catch (const invalid_argument &e) {
       got = "failed";
    }
 
    printResults("dynamic multiplication with different modulo", expected, got);
 }
-

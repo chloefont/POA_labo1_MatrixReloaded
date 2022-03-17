@@ -1,7 +1,3 @@
-//
-// Created by cfont on 24.02.2022.
-//
-
 #include "Application.h"
 #include "Matrix.h"
 
@@ -9,8 +5,8 @@ using namespace std;
 
 Application::Application(unsigned int n1, unsigned int m1, unsigned int n2,
                          unsigned int m2, unsigned modulo) {
-   Matrix matrice1(n1,m1,modulo);
-   Matrix matrice2(n2,m2,modulo);
+   Matrix matrice1(n1, m1, modulo);
+   Matrix matrice2(n2, m2, modulo);
 
    cout << "-- one" << endl;
    cout << matrice1 << endl;

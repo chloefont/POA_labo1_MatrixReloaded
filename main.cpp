@@ -4,7 +4,7 @@
 using namespace std;
 
 
-int main(int argc, char** argv) {
+int main(int argc, char **argv) {
    try {
       unsigned n1 = stoi(argv[1]);
       unsigned m1 = stoi(argv[2]);
@@ -13,7 +13,7 @@ int main(int argc, char** argv) {
       unsigned modulo = stoi(argv[5]);
 
       Application app(n1, m1, n2, m2, modulo);
-   } catch (const exception& e) {
+   } catch (const exception &e) {
       cout << "Veuillez entrer les valeurs suivantes :" << endl
            << "\tn1 : nb lignes de la premiere matrice" << endl
            << "\tm1 : nb colonnes de la premiere matrice" << endl

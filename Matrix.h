@@ -1,7 +1,3 @@
-//
-// Created by cfont on 24.02.2022.
-//
-
 #ifndef POA_LABO1_MATRIXRELOADED_MATRIX_H
 #define POA_LABO1_MATRIXRELOADED_MATRIX_H
 
@@ -19,7 +15,7 @@ public:
     * @param matrix 
     * @return std::ostream& 
     */
-   friend std::ostream& operator<<(std::ostream& os, const Matrix& matrix);
+   friend std::ostream &operator<<(std::ostream &os, const Matrix &matrix);
 
    /**
     * Copies the other matrix into the current matrix.
@@ -27,9 +23,9 @@ public:
     * @param other 
     * @return Matrix& 
     */
-   Matrix& operator=(const Matrix& other);
+   Matrix &operator=(const Matrix &other);
 
-   
+
    /**
     * Matrix are equal if they have the same size, the same values and the same modulo.
     * 
@@ -37,7 +33,7 @@ public:
     * @param m2 the matrix to compare with m1
     * @return A boolean value.
     */
-   friend bool operator==(const Matrix& m1, const Matrix& m2);
+   friend bool operator==(const Matrix &m1, const Matrix &m2);
 
    /**
     * Returns true if the two matrices are not equal
@@ -46,7 +42,7 @@ public:
     * @param m2 the matrix to compare to m1
     * @return The result of the comparison of the two matrices.
     */
-   friend bool operator!=(const Matrix& m1, const Matrix& m2);
+   friend bool operator!=(const Matrix &m1, const Matrix &m2);
 
    /**
     * Constructor that creates a matrix with the given number of rows and columns.
@@ -63,7 +59,7 @@ public:
     * 
     * @param other the other Matrix
     */
-   Matrix(const Matrix& other);
+   Matrix(const Matrix &other);
 
    /**
     * Destroy the Matrix object.
@@ -78,14 +74,14 @@ public:
     * @param other The matrix to add to this one.
     * @return A new Matrix object.
     */
-   Matrix addStatic(const Matrix& other);
+   Matrix addStatic(const Matrix &other);
 
    /**
     * Add the elements of the other matrix to the elements of this matrix.
     * 
     * @param other the matrix to add to this one
     */
-   void addSelf(const Matrix& other);
+   void addSelf(const Matrix &other);
 
    /**
     * Create a new matrix with the values of the other matrix added to the values of this matrix.
@@ -94,7 +90,7 @@ public:
     * @param other The matrix to add to this one.
     * @return A new Matrix object that is the result of the addition of the two matrices.
     */
-   Matrix* addDynamic(const Matrix& other);
+   Matrix *addDynamic(const Matrix &other);
 
    /**
     * Creates a new matrix with the values of this matrix substracted with the values of the other matrix.
@@ -103,14 +99,14 @@ public:
     * @param other The matrix to subtract from this matrix.
     * @return A new Matrix object.
     */
-   Matrix subStatic(const Matrix& other);
+   Matrix subStatic(const Matrix &other);
 
    /**
     * This function subtracts the values of the other matrix from the values of this matrix.
     * 
     * @param other the matrix to subtract from this matrix.
     */
-   void subSelf(const Matrix& other);
+   void subSelf(const Matrix &other);
 
    /**
     * Creates a new matrix with the values of this matrix substracted with the values of the other matrix.
@@ -119,7 +115,7 @@ public:
     * @param other The matrix to subtract from this matrix.
     * @return A new Matrix object.
     */
-   Matrix* subDynamic(const Matrix& other);
+   Matrix *subDynamic(const Matrix &other);
 
    /**
     * This function takes two matrices and multiplies them together into a new Matrix.
@@ -128,14 +124,14 @@ public:
     * @param other the other matrix to be multiplied with this matrix
     * @return The result of the multiplication in a new Matrix.
     */
-   Matrix multStatic(const Matrix& other);
+   Matrix multStatic(const Matrix &other);
 
    /**
     * Multiply this matrix by the other matrix.
     * 
     * @param other the matrix to multiply with.
     */
-   void multSelf(const Matrix& other);
+   void multSelf(const Matrix &other);
 
    /**
     * This function takes two matrices and multiplies them together into a new Matrix.
@@ -144,7 +140,7 @@ public:
     * @param other the matrix to multiply with.
     * @return A new Matrix object that is the result of the multiplication.
     */
-   Matrix* multDynamic(const Matrix& other);
+   Matrix *multDynamic(const Matrix &other);
 
    /**
     * Return the number of rows in the matrix
@@ -180,7 +176,7 @@ private:
     * @param matrix 2D array with the values to copy
     */
 
-   Matrix(size_t nbRows, size_t nbCols, unsigned modulo, unsigned** otherMatrix);
+   Matrix(size_t nbRows, size_t nbCols, unsigned modulo, unsigned **otherMatrix);
 
    /**
     * Allocate a matrix of unsigned integers
@@ -189,7 +185,7 @@ private:
     * @param nbCols the number of columns in the matrix
     * @return A pointer to a pointer to an array of unsigneds.
     */
-   static unsigned** allocateMatrix(size_t nbRows, size_t nbCols);
+   static unsigned **allocateMatrix(size_t nbRows, size_t nbCols);
 
    /**
     * It makes an opration between m1 and m2 and stores the result in m1
@@ -198,7 +194,7 @@ private:
     * @param m2 The second matrix.
     * @param op the operation to perform.
     */
-   static void operation(Matrix& m1, const Matrix& m2, const Operation&
+   static void operation(Matrix &m1, const Matrix &m2, const Operation &
    op);
 
    /**
@@ -207,10 +203,10 @@ private:
     * @param matrixArray the array of pointers to the rows of the matrix
     * @param height The number of rows in the matrix.
     */
-   static void deleteMatrix(unsigned** matrixArray, size_t height);
+   static void deleteMatrix(unsigned **matrixArray, size_t height);
 
 
-   unsigned** matrix;
+   unsigned **matrix;
    size_t nbRows;
    size_t nbCols;
    unsigned modulo;

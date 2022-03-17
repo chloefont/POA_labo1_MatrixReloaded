@@ -1,19 +1,17 @@
-//
-// Created by luca on 16/03/2022.
-//
-
 #ifndef POA_LABO1_MATRIXRELOADED_RANDOMNUMBERGENERATOR_H
 #define POA_LABO1_MATRIXRELOADED_RANDOMNUMBERGENERATOR_H
 
 
-class RandomNumberGenerator{
+class RandomNumberGenerator {
 public:
 
    int generate(int min, int max);
 
-   static RandomNumberGenerator& getInstance();
-   RandomNumberGenerator(RandomNumberGenerator const&) = delete;
-   RandomNumberGenerator& operator=(RandomNumberGenerator const&) = delete;
+   static RandomNumberGenerator &getInstance();
+
+   RandomNumberGenerator(RandomNumberGenerator const &) = delete;
+
+   RandomNumberGenerator &operator=(RandomNumberGenerator const &) = delete;
 
 private:
    RandomNumberGenerator();
